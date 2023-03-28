@@ -427,7 +427,7 @@ body {
 
 .price_page {
   height: 63vh;
-  background: url(/img/background_illustration.png);
+  background: url(./img/background_illustration.png);
   background-color: #eff2e0;
   background-position: center;
   background-size: 983px;
@@ -720,7 +720,7 @@ body {
 
 .popular_question {
   height: 79vh;
-  background: url(/img/background2.png);
+  background: url(./img/background2.png);
   background-color: #eff2e0;
   background-position: center;
   background-size: 1440px;
