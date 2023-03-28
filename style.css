@@ -130,52 +130,52 @@ body {
 /* *FONTS */
 
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Thin.ttf),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Thin.ttf),
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-UltraLight.ttf),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-UltraLight.ttf),
    
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Light.ttf),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Light.ttf),
   
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Regular.ttf),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Regular.ttf),
     
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Medium.ttf),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Medium.ttf),
    
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Semibold.ttf),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Semibold.ttf),
     url(./fonts/Gilroy-Semibold.woff);
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Bold.ttf),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Bold.ttf),
 
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Extrabold.ttf),
+  font-family:'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Extrabold.ttf),
     
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Black.ttf),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Black.ttf),
   
 }
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Heavy.ttf ),
+  font-family: 'Gilroy';
+  src: local('Gilroy') url(./fonts/Gilroy-Heavy.ttf ),
    ;
 }
 .container {
