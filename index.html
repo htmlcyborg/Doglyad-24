@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Догляд 24/7</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./fonts/Gilroy-UltraLight.ttf" as="font">
-    <link rel="stylesheet" href="./fonts/Gilroy-Light.ttf" as="font">
+    <link rel="stylesheet" href="./fonts/Gilroy-UltraLight.ttf" as="font" />
+    <link rel="stylesheet" href="./fonts/Gilroy-Light.ttf" as="font" />
     <link rel=stylesheet" href="./fonts/Gilroy-Thin.ttf" as="font">
-    <link rel="stylesheet" href="./fonts/Gilroy-Regular.ttf" as="font">
-    <link rel="stylesheet" href="./fonts/Gilroy-Medium.ttf" as="font">
-    <link rel="stylesheet" href="./fonts/Gilroy-Semibold.ttf" as="font">
-  <link rel="stylesheet" href="./fonts/Gilroy-Bold.ttf" as="font">
-  <link rel="stylesheet" href="./fonts/Gilroy-Extrabold.ttf" as="font">
-   <link rel="stylesheet" href="./fonts/Gilroy-Black.ttf" as="font">
-
+    <link rel="stylesheet" href="./fonts/Gilroy-Regular.ttf" as="font" />
+    <link rel="stylesheet" href="./fonts/Gilroy-Medium.ttf" as="font" />
+    <link rel="stylesheet" href="./fonts/Gilroy-Semibold.ttf" as="font" />
+    <link rel="stylesheet" href="./fonts/Gilroy-Bold.ttf" as="font" />
+    <link rel="stylesheet" href="./fonts/Gilroy-Extrabold.ttf" as="font" />
+    <link rel="stylesheet" href="./fonts/Gilroy-Black.ttf" as="font" />
   </head>
   <body>
     <!-- *HEADER  -->
@@ -29,45 +28,54 @@
             <a href="tel:+38063 021 24 07" class="header_contact link">
               +38063 021 24 07</a
             >
-            <button class="header_btn">Зворотній зв’язок</button>
+            <a href="tel:+38063 021 24 07" class="header_btn link">Зворотній зв’язок</a>
           </div>
           <div class="header_socials">
-            <a href="#" class="header_social_img"><img
-              src="./img/telegram_logo_icon.png"
-              
-              alt="telegram"
+            <a href="t.me/dohlyad24_bot" class="header_social_img"
+              ><img src="./img/telegram_logo_icon.png" alt="telegram"  class="header_social_icon"
             /></a>
-          <a href="#" class="header_social_img"> <img
-            src="./img/viber_logo_icon.png"
-            
-            alt="viber"
-          /></a>
-         
-          <a href="#" class="header_social_img"><img
-            src="./img/whatsapp_logo_icon.png"
-           
-            alt="whatsup"
-          /></a>
+            <a href="viber://pa?chatURI=doglyad24" class="header_social_img">
+              <img src="./img/viber_logo_icon.png" alt="viber"  class="header_social_icon"
+            /></a>
+            <a href="https://wa.me/380630212407"  class="header_social_img"
+              ><img src="./img/whatsapp_logo_icon.png" alt="whatsup" class="header_social_icon"
+            /></a>
           </div>
+           <img class="header_burger_icon" onclick="burgerMenu()" src="./img/burger_icon.svg">
         </div>
       </div>
     </header>
+   
+ <!-- ?HEADER -->
 
-    <!-- ?HEADER_END -->
+    <!-- !MOBILE_ADAPTIVE_BAR -->
 
+    <div class="mobile_socials_section">
+       <div class="mobile_socials_block">
+       <a href="t.me/dohlyad24_bot" class="mobile_social_link"><img src="./img/mobile_tg.png" alt="telegram_icon" class="mobile_social_img"></a> 
+       <a href="viber://pa?chatURI=doglyad24" class="mobile_social_link"><img src="./img/mobile_viber.png" alt="viber_icon" class="mobile_social_img"></a>
+       <a href="https://wa.me/380630212407" class="mobile_social_link"><img src="./img/mobile_wu.png" alt="whatsup_icon" class="mobile_social_img"></a>
+       </div>
+       <p class="mobile_social_sub">
+        Працюємо з 8.00-21.00
+       </p>
+    </div>
+
+        <!-- ?MOBILE_ADAPTIVE_BAR -->
+
+   
     <!-- *HEADER_BUTTONS_SECTION -->
 
-    <section class="button_section">
-      <div class="container">
-        <div class="btn_area">
-          <button class="section_btn">Ціни та послуги</button>
-          <button class="section_btn">Обовязки</button>
-          <button class="section_btn">Запитання</button>
-          <button class="section_btn">Контакти</button>
-        </div>
+    <nav class="btn_block">
+      <div class="btn_area"  id="menuList">
+        <a class="section_btn link" href="#price_page" >Ціни та послуги</a>
+        <a class="section_btn link" href="#duties" >Обовязки</a>
+       <a class="section_btn link" href="#popular_question" >Запитання</a>
+        <a class="section_btn link" href="#footer" >Контакти</a>
       </div>
-    </section>
-
+    </nav>
+    
+ 
     <!-- ?HEADER_BUTTONS_SECTION -->
 
     <!-- *HOME_SECTION -->
@@ -87,7 +95,11 @@
                 <p class="home_table_text">підбір за 15 хвилин</p>
               </div>
               <div class="home_table2">
-                <img src="./img/free_24_icon.svg" alt="24/7" class="home_icon" />
+                <img
+                  src="./img/free_24_icon.svg"
+                  alt="24/7"
+                  class="home_icon"
+                />
                 <p class="home_table_text">
                   робота без вихідних 24/7 з 8 до 21
                 </p>
@@ -112,8 +124,12 @@
               </div>
             </div>
             <div class="home_btn_area">
-              <button class="home_btn1">Замовити доглядальницю</button>
-              <button class="home_btn2">Хочу працювати</button>
+              <a class="home_btn1 link" href="#order_form_popup"
+                >Замовити доглядальницю</a
+              >
+              <a class="home_btn2 link" href="#work_form_popup"
+                >Хочу працювати</a
+              >
             </div>
           </div>
           <img src="./img/illustration 1.png" class="home_illustration" />
@@ -125,399 +141,1165 @@
 
     <!-- *PRICE_PAGE_SECTION -->
 
-    <section class="price_page">
+    <section id="price_page" class="price_page">
       <div class="container">
         <h1 class="price_page_title">Вартість послуг доглядальниці</h1>
         <div class="price_page_content">
           <div class="price_card">
             <h2 class="price_card_title">Доглядальниця погодинно</h2>
-            <button class="price_card_btn1">Детальніше про послугу</button>
-            <button class="price_card_btn2">Лишити заявку</button>
+            <a class="price_card_btn1 link" href="#info_price_popup"
+              >Детальніше про послугу</a
+            >
+            <a class="price_card_btn2 link" href="#order_form_popup"
+              >Лишити заявку</a
+            >
             <p class="price_card_subtitle">Вартість послуги:</p>
             <p class="price_card_subtitle">від 50 грн/ за 1 годину</p>
-            <button class="price_card_btn3">Детальніше про тарифи</button>
+            <a class="price_card_btn3 link" href="#about_service">Детальніше про тарифи</a>
           </div>
           <div class="price_card">
             <h2 class="price_card_title">Доглядальниця з проживанням</h2>
-            <button class="price_card_btn1">Детальніше про послугу</button>
-            <button class="price_card_btn2">Лишити заявку</button>
+            <a href="#info_price_popup2" class="price_card_btn1 link"
+              >Детальніше про послугу</a
+            >
+            <a class="price_card_btn2 link" href="#order_form_popup"
+              >Лишити заявку</a
+            >
             <p class="price_card_subtitle">Вартість послуги:</p>
             <p class="price_card_subtitle">від 13 800 грн/ за 1 місяць</p>
-            <button class="price_card_btn3">Детальніше про тарифи</button>
+            <a href="#about_service2" class="price_card_btn3 link">Детальніше про тарифи</a>
           </div>
           <div class="price_card">
             <h2 class="price_card_title">Доглядальниця в лікарню</h2>
-            <button class="price_card_btn1">Детальніше про послугу</button>
-            <button class="price_card_btn2">Лишити заявку</button>
+            <a href="#info_price_popup3" class="price_card_btn1 link"
+              >Детальніше про послугу</a
+            >
+            <a class="price_card_btn2 link" href="#order_form_popup"
+              >Лишити заявку</a
+            >
             <p class="price_card_subtitle">Вартість послуги:</p>
             <p class="price_card_subtitle">від 500 грн/ за 6 годин</p>
-            <button class="price_card_btn3">Детальніше про тарифи</button>
+            <a href="#about_service3" class="price_card_btn3 link">Детальніше про тарифи</a>
           </div>
         </div>
       </div>
     </section>
 
- <!-- ?PRICE_PAGE_SECTION -->
-    
-  <!-- *DUTY_PAGE_SECTION -->
+    <!-- ?PRICE_PAGE_SECTION -->
 
-<section class="duties">
-  <div class="container">
-    <h1 class="duty_page_title">
-      Обов’язки доглядальниці
-    </h1>
-    <div class="duties_area">
-      <div class="duties_block">
-        <div class="duty_card">
-          <img src="./img/duty_img_1.png" class="duty_img1" alt="gigiena">
-          <h4 class="duty_card_title">
-            Дотримання гігієни
-          </h4>
-        </div>
-        <div class="duty_card">
-          <img src="./img/duty_img_2.png" class="duty_img2" alt="ija">
-          <h4 class="duty_card_title">
-            Приготування їжі
-          </h4>
-        </div>
-        <div class="duty_card">
-          <img src="./img/duty_img_3.png" class="duty_img3" alt="magazin">
-          <h4 class="duty_card_title">
-            Похід до магазину
-          </h4>
-        </div>
-        <div class="duty_card">
-          <img src="./img/duty_img_4.png" class="duty_img4" alt="profilaktika">
-          <h4 class="duty_card_title">
-            Профілактика пролежнів
-          </h4>
-        </div>
-        <div class="duty_card">
-          <img src="./img/duty_img_5.png" class="duty_img5" alt="vpravi">
-          <h4 class="duty_card_title">
-            Виконання вправ
-          </h4>
-        </div>
-        <div class="duty_card">
-          <img src="./img/duty_img_6.png" class="duty_img6" alt="besida">
-          <h4 class="duty_card_title">
-            Підтримування бесіди
-          </h4>
-        </div>
-        <div class="duty_card">
-          <img src="./img/duty_img_7.png" class="duty_img7" alt="pribirannya">
-          <h4 class="duty_card_title">
-            Прибирання дому
-          </h4>
-        </div>
-        <div class="duty_card">
-          <img src="./img/duty_img_8.png" class="duty_img8" alt="doruchennya">
-          <h4 class="duty_card_title">
-            Виконання доручень
-          </h4>
-        </div>
-        <div class="duty_card">
-          <img src="./img/duty_img_9.png" class="duty_img9" alt="progulyanki">
-          <h4 class="duty_card_title">
-            Прогулянка на вулиці
-          </h4>
-        </div>
-      </div>
-    </div>
-    <div class="application_area">
-      <div class="duty_card">
-        <img src="./img/duty_img_10.png" class="duty_img10" alt="shyodennik">
-        <h4 class="duty_card_title1">
-          Ведення щоденника догляду
-        </h4>
-      </div>
-      <div class="application_block">
-        <div class="application_block_content">
-         <h3 class="application_block_title">  
-          Дбайливий та професійний догляд за Вашими близькими!
-         </h3>
-         <p class="application_block_subtitle">
-          Телефонуйте: 
-          <span class="application_block_span">
-            +38063 021 24 07
-          </span>
-          або залиште заявку на дзвінок
-         </p>
-         <button class="application_block_btn">
-          Лишити заявку
-         </button>
-        </div>
-        <img src="./img/illustration 2.png" alt="zayavka" class="duty_illustration">
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- *DUTY_PAGE_SECTION -->
 
- <!-- ?DUTY_PAGE_SECTION -->
-
-  <!-- *QUESTION_PAGE_SECTION -->
-
-  <section class="popular_question"> 
-    <div class="container">
-      <h1 class="pop_question_title">
-        Популярні запитання
-      </h1>
-     <div class="question_area">
-      <div class="questions_blocks_area">
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_1"> Що впливає на вартість послуг доглядальниці?  
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-           
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_1">
-            <div class="faq-text">
-              <p>Додаткова оплата нараховується якщо вага подопічного більше ніж 80 кг. Також може бути надбавка якща замовляються послуги доглядальниці з мед освітою, 
-                або є потреба у виконанні процедур що вимагають спеціальних навичок: зондове годування, обробка глубоких пролежнів, трафічні язвы або гангрену. 
-                Якщо потребується догляд за двома підопічними ціна також буде вищою,
-                 але все залежить від стану підопічних тому в будь-якому випадку менеджер проінформує більш розгорнуто виходячи з конкретних обставин</p>
+    <section id="duties" class="duties">
+      <div class="container">
+        <h1 class="duty_page_title">Обов’язки доглядальниці</h1>
+        <div class="duties_area">
+          <div class="duties_block">
+            <div class="duty_card">                                             
+              <a href="#duty_popup" class="duty_img1"
+                ><img src="./img/duty_img_1.png" alt="gigiena" class="duty_main_img" />
+              </a>
+              <h4 class="duty_card_title">Дотримання гігієни</h4>
+            </div>
+            <div class="duty_card">
+              <a href="#duty_popup2" class="duty_img2"
+                ><img src="./img/duty_img_2.png" alt="ija"  class="duty_main_img2"
+              /></a>
+              <h4 class="duty_card_title">Приготування їжі</h4>
+            </div>
+            <div class="duty_card">
+              <a href="#duty_popup3"
+              class="duty_img3"><img
+                  src="./img/duty_img_3.png"
+                  class="duty_main_img3"
+                  alt="magazin"  class="duty_main_img"
+              /></a>
+              <h4 class="duty_card_title">Похід до магазину</h4>
+            </div>
+            <div class="duty_card">
+              <a href="#duty_popup4"  class="duty_img4">
+                <img
+                  src="./img/duty_img_4.png"
+                  alt="profilaktika"  
+                  class="duty_main_img4"
+              /></a>
+              <h4 class="duty_card_title">Профілактика пролежнів</h4>
+            </div>
+            <div class="duty_card">
+              <a href="#duty_popup5" class="duty_img5" >
+                <img src="./img/duty_img_5.png"  alt="vpravi"  class="duty_main_img5"
+              /></a>
+              <h4 class="duty_card_title">Виконання вправ</h4>
+            </div>
+            <div class="duty_card">
+              <a href="#duty_popup6"
+              class="duty_img6" ><img src="./img/duty_img_6.png"  alt="besida"  class="duty_main_img6"
+              /></a>
+              <h4 class="duty_card_title">Підтримування бесіди</h4>
+            </div>
+            <div class="duty_card">
+              <a href="#duty_popup7" class="duty_img7">
+                <img
+                  src="./img/duty_img_7.png"
+                  alt="pribirannya"
+                  class="duty_main_img7"         
+              /></a>
+              <h4 class="duty_card_title">Прибирання дому</h4>
+            </div>
+            <div class="duty_card"> 
+              <a href="#duty_popup8"  class="duty_img8"
+                ><img
+                  src="./img/duty_img_8.png"
+                  class="duty_main_img8"
+                  alt="doruchennya"
+              /></a>
+              <h4 class="duty_card_title">Виконання доручень</h4>
+            </div>
+            <div class="duty_card">
+              <a href="#duty_popup9" class="duty_img9"
+                ><img
+                  src="./img/duty_img_9.png"
+                  alt="progulyanki"
+                  class="duty_main_img9"
+              /></a>
+              <h4 class="duty_card_title">Прогулянка на вулиці</h4>
+            </div>
+            <div class="duty_card1">
+              <a href="#duty_popup10" class="duty_img10"
+                ><img
+                  src="./img/duty_img_10.png"
+                  alt="shyodennik"
+                  class="duty_main_img10"
+              /></a>
+              <h4 class="duty_card_title1">Ведення щоденника догляду</h4>
+            </div>
+          </div>
+          </div>
+          <div class="application_area">
+            <div class="duty_card2">
+              <a href="#duty_popup10"
+                ><img
+                  src="./img/duty_img_10.png"
+                  class="duty_img10"
+                  alt="shyodennik"
+                  class="duty_main_img11"
+              /></a>
+              <h4 class="duty_card_title1">Ведення щоденника догляду</h4>
+            </div>
+            <div class="application_block">
+              <div class="application_block_content">
+                <h3 class="application_block_title">
+                  Дбайливий та професійний догляд за Вашими близькими!
+                </h3>
+                <p class="application_block_subtitle">
+                  Телефонуйте:
+                  <a
+                    class="application_block_span link"
+                    href="tel:+38063 021 24 07qqqqqqqqqqqq"
+                    >+38063 021 24 07</a
+                  >
+                  або залиште заявку на дзвінок
+                </p>
+                <a href="#order_form_popup" class="application_block_btn link">
+                  Лишити заявку
+                </a>
+              </div>
+              <img
+                src="./img/illustration 2.png"
+                alt="zayavka"
+                class="duty_illustration"
+              />
             </div>
           </div>
         </div>
+      
+    </section>
+
+    <!-- ?DUTY_PAGE_SECTION -->
+
+    <!-- *QUESTION_PAGE_SECTION -->
+
+    <section id="popular_question" class="popular_question">
+      <div class="container">
+        <h1 class="pop_question_title">Популярні запитання</h1>
+       <div class="accordion_area">
+        <div class="accordion">
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Що впливає на вартість послуг доглядальниці?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">Додаткова оплата нараховується якщо вага подопічного більше ніж 80 кг. Також може бути надбавка якща замовляються послуги доглядальниці з мед освітою, 
+                  або є потреба у виконанні процедур що вимагають спеціальних навичок: зондове годування, обробка глубоких пролежнів, трафічні язвы або гангрену.
+                 Якщо потребується догляд за двома підопічними ціна також буде вищою, але все залежить від стану підопічних тому в будь-якому випадку менеджер проінформує
+                  більш розгорнуто виходячи з конкретних обставин</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Які можливі графіки роботи доглядальниці?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">Можливі найрізноманітніші графіки надання послуг, це можуть бути як погодинні графіки, починаючи з 1 години, 
+                  так і розривні графіки наприклад 2 години вранці 2 години увечері, найпопулярнішим видом замовлення є графік з проживанням разом з підопічним від 30 діб. 
+                  При оформленні заявки менеджер пропонує найбільш оптимальні варіанти виходячи з Ваших потреб</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Ваші доглядальниці, хто вони, який мають досвід?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">Фахівці компанії зазвичай мають середній вік 40-50 років та досвід роботи у сфері догляду від 3-х років.
+                   Всі потенційні кандидати на посаду доглядальниці проходять початкову співбесіду.
+                    Для реєстрації у компанії їх потрібно надати паспорт, довідку про проходження флюорографії, санітарну книжку та інші медичні документи.
+                   Крім того, кандидати мають надати довідку про відсутність судимості, характеристику з попереднього місця роботи та документи про освіту</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Яка кваліфікація ваших доглядальниць?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">Всі наші доглядальниці мають або медичну освіту або тривалий досвід роботи у сфері догляду</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Як довго триває підбор доглядальниці на замовлення?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">В середньому тривалість підбору не довше однієї години.
+                   Широка база виконавців дозволяє робтити оперативний підбір у відповідності з вимогами замовлення щодо характеристик та умов роботи. 
+                  В термінових випадках підбір може бути займати до 15 хвилин</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Чи здійснюєте контроль якості послуг під час роботи доглядальниць?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">Так, контроль якості послуг здійснюється протягом дії договру</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Чи можливо замінити доглядальницю, якщо вона не підходить?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">Протягом дії договору, у разі необхідності, заміна доглядальниці забезпечується безоплатно</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Як краще оплатити роботу доглядальниці: заздалегідь чи пізніше?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">Оплата роботи послуг доглядальниці проводиться тільки за фактом виконаних робіт. Періодичність оплати оговорюється окремо (щодня, раз на три дні, раз на тиждень) в залежності від тривалості замовлення</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Як можна замовити послугу доглядальниці?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">В телефонному режимі необхідно залишити заявку на послугу менеджеру агенції.
+                   Далі Вам на месенджер надсилається характеристика доглядальниці для попереднього погодження,
+                    у разі погодження Ви зідзвонюєтесь з доглядальницею, домовляєтесь про зустріч, зустрічаєтеся, знайомитеся та допускаєте до роботи.
+                     Після того, як доглядальниця приступила до роботи, укладається договір і вноситься передплата в компанію.
+                   З доглядальницею Ви розраховуєтеся самостійно лише за фактом виконаної роботи</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Який порядок оплати послуги з добору доглядальниці: кому, куди і скільки?</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">Доглядальниці виплачуються гроші на руки за фактом виконаних робіт,
+                   а в компанію вноситься передоплата протягом двох годин після того, як доглядальниця приступить до роботи.
+                    Якщо ви залишалися з доглядальницею на 30 днів, передоплата вноситься після першої пробної доби, якщо вас влаштувала доглядальниця.
+                   В залежності від тривалості замовлення оговорюється порядок оплати послуг доглядальниці (може бути щодня, раз на три дні або раз на тиждень)</p>
+              </div>
+          </div>
+          <div class="accordion_main_content">
+            <div class="accordion_label"><h3 class="accordion_title">Обов'язки доглядальниці, на що можна розраховувати</h3>
+              <img
+                      src="./img/відкрити.svg"
+                      class="question_block_img"
+                      alt="open"
+                    />
+              <img src="./img/закрити.svg"
+              class="question_block_img2"
+              alt="close">
+            </div>
+              <div class="accordion_content">
+                <p class="accordion_text">До стандартного переліку Обов'язків відносяться наступні функції: 
+                  </p>
+                  <ul class="accordion_list">
+                  <li class="accordion_list_item">
+                    Гігієна підопічного;
+                  </li>
+                  <li class="accordion_list_item">
+                    Допомога при прийомі, ванни, душа (при самостійному переміщенні підопічного). 
+                  </li>
+                  <li class="accordion_list_item">
+                    Організація дозвілля (читання, прогулянки, спілкування та ін.);
+                  </li>
+                  <li class="accordion_list_item">
+                    Приготування їжі, годування в разі необхідності;
+                  </li>
+                  <li class="accordion_list_item">
+                    Супровід на прогулянки та на прийом до лікаря (лише за згодою Замовника)
+                  </li>
+                  <li class="accordion_list_item">
+                    Прибирання кімнати, де знаходиться підопічний та санвузла, провітрювання;
+                  </li>
+                  <li class="accordion_list_item">
+                    Виконання дрібних доручень (покупки, оплата рахунків та ін.);
+                  </li>
+                  <li class="accordion_list_item">
+                    Зміна постільної білизни;
+                  </li>
+                  <li class="accordion_list_item">
+                    Прання в пральній машинці;
+                  </li>
+                  <li class="accordion_list_item">
+                    Годування домашніх тварин, догляд домашніх рослин (полив);
+                  </li>
+                  <li class="accordion_list_item">
+                    Нагадування про прийом ліків з внесенням записів до щоденника догляду при необхідності.
+                  </li>
+                  </ul>
+              </div>
+          </div>
+          </div>
+       </div> 
         
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_2"> Які можливі графіки роботи доглядальниці? 
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-           
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_2">
-            <div class="faq-text">
-              <p>Можливі найрізноманітніші графіки надання послуг, це можуть бути як погодинні графіки, починаючи з 1 години, 
-                так і розривні графіки наприклад 2 години вранці 2 години увечері, найпопулярнішим видом замовлення є графік з проживанням разом з підопічним від 30 діб. 
-                При оформленні заявки менеджер пропонує найбільш оптимальні варіанти виходячи з Ваших потреб</p>
-            </div>
-          </div>
         </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_3"> Ваші доглядальниці, хто вони, який мають досвід?
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_3">
-            <div class="faq-text">
-              <p>Фахівці компанії зазвичай мають середній вік 40-50 років та досвід роботи у сфері догляду від 3-х років.
-                 Всі потенційні кандидати на посаду доглядальниці проходять початкову співбесіду. Для реєстрації у компанії їх потрібно надати паспорт, довідку про проходження флюорографії, санітарну книжку та інші медичні документи.
-                 Крім того, кандидати мають надати довідку про відсутність судимості, характеристику з попереднього місця роботи та документи про освіту</p>
-            </div>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_4"> Яка кваліфікація ваших доглядальниць?
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-           
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_4">
-            <div class="faq-text">
-              <p>Всі наші доглядальниці мають або медичну освіту або тривалий досвід роботи у сфері догляду</p>
-            </div>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_5"> Як довго триває підбор доглядальниці на замовлення?
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_5">
-            <div class="faq-text">
-              <p>В середньому тривалість підбору не довше однієї години. Широка база виконавців дозволяє робтити оперативний підбір у
-                 відповідності з вимогами замовлення щодо характеристик та умов роботи. В термінових випадках підбір може бути займати до 15 хвилин</p>
-            </div>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_6"> Чи здійснюєте контроль якості послуг під час роботи доглядальниць? 
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_6">
-            <div class="faq-text">
-              <p>Так, контроль якості послуг здійснюється на протязі дії договру</p>
-            </div>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_7"> Чи можливо замінити доглядальницю, якщо вона не підходить?
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_7">
-            <div class="faq-text">
-              <p>Протягом дії договору, у разі необхідності, заміна доглядальниці забезпечується безоплатно</p>
-            </div>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_8">Як краще оплатити роботу доглядальниці: заздалегідь чи пізніше?
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_8">
-            <div class="faq-text">
-              <p>Оплата роботи послуг доглядальниці проводиться тільки за фактом виконаних робіт. 
-                Періодичність оплати оговорюється окремо (щодня, раз на три дні, раз на тиждень) в залежності від тривалості замовлення</p>
-            </div>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_9">Як можна замовити послугу доглядальниці?
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_9">
-            <div class="faq-text">
-              <p>В телефонному режимі необхідно залишити заявку на послугу менеджеру агенції.
-                 Далі Вам на месенджер надсилається характеристика доглядальниці для попереднього погодження, у разі погодження Ви зідзвонюєтесь з доглядальницею, домовляєтесь про зустріч, зустрічаєтеся, знайомитеся та допускаєте до роботи. Після того, як доглядальниця приступила до роботи, укладається договір і вноситься передплата в компанію.
-                 З доглядальницею Ви розраховуєтеся самостійно лише за фактом виконаної роботи</p>
-            </div>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_10"> Який порядок оплати послуги з добору доглядальниці: кому, куди і скільки?  
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open"> 
-           </div>
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_10">
-            <div class="faq-text">
-              <p>Доглядальниці виплачуються гроші на руки за фактом виконаних робіт,
-                 а в компанію вноситься передоплата протягом двох годин після того, як доглядальниця приступить до роботи. Якщо ви залишалися з доглядальницею на 30 днів, передоплата вноситься після першої пробної доби, якщо вас влаштувала доглядальниця.
-                 В залежності від тривалості замовлення оговорюється порядок оплати послуг доглядальниці (може бути щодня, раз на три дні або раз на тиждень)</p>
-            </div>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-           <div class="faq_content">
-            <label class="faq-title" for="faq_11">Обов'язки доглядальниці, на що можна розраховувати
-            </label>
-            <img src="./img/відкрити.svg" class="question_block_img"  alt="open">       
-           </div>
-            <input type="checkbox" class="faq-input"  name="faq" id="faq_11">
-            <div class="faq-text">
-              <ul>До стандартного переліку Обов'язків відносяться наступні функції: 
-               <li> Гігієна підопічного;</li>
-               <li>Допомога при прийомі, ванни, душа (при самостійному переміщенні підопічного). </li> 
-               <li>Організація дозвілля (читання, прогулянки, спілкування та ін.);</li> 
-               <li> Приготування їжі, годування в разі необхідності;</li> 
-               <li>Супровід на прогулянки та на прийом до лікаря (лише за згодою Замовника)</li> 
-               <li>Прибирання кімнати, де знаходиться підопічний та санвузла, провітрювання;</li> 
-               <li> Виконання дрібних доручень (покупки, оплата рахунків та ін.);</li>
-               <li>Зміна постільної білизни;</li>  
-               <li> Прання в пральній машинці;</li>
-               <li> Годування домашніх тварин, догляд домашніх рослин (полив);</li>
-                 <li> Нагадування про прийом ліків з внесенням записів до щоденника догляду при необхідності.</li> 
-                </ul>
-            </div>
-          </div>
-        </div>
-     </div>
-     </div>
-    </div>
-  </section>
- 
-  <!-- ?QUESTION_PAGE_SECTION -->
+      </div>
+    </section>
+
+    <!-- ?QUESTION_PAGE_SECTION -->
 
     <!-- *FOOTER_SECTION -->
-  
-    <footer class="footer">
-      <div class="container">
-        <h1 class="footer_title">
-          Контакти
-        </h1>
-        <div class="footer_wrapper">
 
+    <footer id="footer" class="footer">
+      <div class="container">
+        <h1 class="footer_title">Контакти</h1>
+        <div class="footer_wrapper">
           <!-- *FOOTER_LEFT_SIDE  -->
 
           <div class="footer_form_content">
-            <h3 class="footer_form_content_title">
-              Підберемо доглядальницю за 15 хвилин з урахуванням ваших потреб
-            </h3>
-            <form class="footer_form">
-              <input class="footer_input" placeholder="Ваше ім’я" type="text">
-              <input class="footer_input2" placeholder="Ваш телефон" type="text">
-            </form>
+            <div class="footer_form_top_content">
+              <h3 class="footer_form_content_title">
+                Підберемо доглядальницю за 15 хвилин з урахуванням ваших потреб
+              </h3>
+              <form class="footer_form">
+                <input class="footer_input" placeholder="Ваше ім’я" type="text" />
+                <input
+                  class="footer_input2"
+                  placeholder="Ваш телефон"
+                  type="text"
+                />
+              </form>
+            </div>
+           
             <div class="footer_button_area">
-             <button class="footer_btn">
-              Надіслати
-             </button>
-             <p class="footer_form_content_sub">
-              *натискаючи кнопку- “Надіслати”, ви надаєте свою згоду на обробку персональних данних 
-             </p>
+              <button class="footer_btn">Надіслати</button>
+              <p class="footer_form_content_sub">
+                *натискаючи кнопку- “Надіслати”, ви надаєте свою згоду на
+                обробку персональних данних
+              </p>
             </div>
           </div>
-           <!-- ?FOOTER_LEFT_SIDE  -->
+          <!-- ?FOOTER_LEFT_SIDE  -->
 
-            <!-- *FOOTER_RIGHT_SIDE  -->
+          <!-- *FOOTER_RIGHT_SIDE  -->
 
           <div class="footer_contact_content">
+
+            <!-- !MOBILE_ADAPTIVE_BAR -->
+
+          <div class="footer_socials_tablet_side">
             <div class="footer_socials_block">
-              <a href="#" class="header_social_img"><img
-                src="./img/telegram_logo_icon.png"
-                
-                alt="telegram"
+              <a href="#" class="header_social_img"
+                ><img src="./img/telegram_logo_icon.png" alt="telegram"
               /></a>
-            <a href="#" class="header_social_img"> <img
-              src="./img/viber_logo_icon.png"
-              
-              alt="viber"
-            /></a>
-           
-            <a href="#" class="header_social_img"><img
-              src="./img/whatsapp_logo_icon.png"
-             
-              alt="whatsup"
-            /></a>
-            
+              <a href="#" class="header_social_img">
+                <img src="./img/viber_logo_icon.png" alt="viber"
+              /></a>
+
+              <a href="#" class="header_social_img"
+                ><img src="./img/whatsapp_logo_icon.png" alt="whatsup"
+              /></a>
             </div>
+            <div class="footer_adres_block1">
+              <p class="footer_contact">Адреса:</p>
+              <a class="footer_main_adres link" href="#"
+                >04052 Україна, м. Київ, вул. Воздвиженська 50</a
+              >
+            </div>
+          </div>
+
+
+          <div class="footer_contacts_mobile_side">
+              <a href="tel:+38063 021 24 07" class="footer_main_contact1 link"
+              >+38063 021 24 07</a>
+              <a
+              href="mailto:doglyad24@gmail.com"
+              class="footer_main_contact2 link"
+              >doglyad24@gmail.com</a
+            >
+            <div class="footer_mobile_socials_side">
+              <a class="footer_mobile_social_icon" href="#"><img src="./img/mobile_tg.png" alt="telegram" class="mobile_social_img"></a>
+              <a class="footer_mobile_social_icon" href="#"><img src="./img/mobile_viber.png" alt="viber" class="mobile_social_img"></a>
+              <a class="footer_mobile_social_icon" href="#"><img src="./img/mobile_wu.png" alt="whatsup" class="mobile_social_img"></a>
+            </div>
+              <a class="footer_main_adres link" href="#"
+                >04052 Україна, м. Київ, вул. Воздвиженська 50</a
+              >
+          </div>
+
+           <!-- ?MOBILE_ADAPTIVE_BAR -->
+
+
             <div class="footer_contacts">
               <div class="footer_contact_block">
                 <p class="footer_contact">Телефон:</p>
-                <a href="tel:+38063 021 24 07" class="footer_main_contact link">+38063 021 24 07</a>
+                <a href="tel:+38063 021 24 07" class="footer_main_contact1 link"
+                  >+38063 021 24 07</a
+                >
               </div>
               <div class="footer_contact_block">
                 <p class="footer_contact">Пошта:</p>
-                <a href="mailto:footer_main_contact link" class="footer_main_contact link">doglyad24@gmail.com</a>
+                <a
+                  href="mailto:doglyad24@gmail.com"
+                  class="footer_main_contact2 link"
+                  >doglyad24@gmail.com</a
+                >
               </div>
             </div>
             <div class="footer_adres_block">
               <p class="footer_contact">Адреса:</p>
-              <a class="footer_main_adres link" href="#">04052 Україна, м. Київ, вул. Воздвиженська 50</a>
+              <a class="footer_main_adres link" href="#"
+                >04052 Україна, м. Київ, вул. Воздвиженська 50</a
+              >
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- *FORM_POPUP -->
+
+    <div id="order_form_popup" class="form_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="form_content">
+          <div class="form_left_content">
+            <h3 class="form_title">
+              Дбайливий та професійний догляд за Вашими близькими!
+            </h3>
+            <img
+              class="form_img"
+              src="./img/form_illustration.png"
+              alt="illustration"
+            />
+          </div>
+          <line class="form_line"></line>
+          <div class="form_right_content">
+            <h3 class="form_logo">Догляд 24/7</h3>
+            <p class="form_subtitle">
+              Підберемо доглядальницю за 15 хвилин з урахуванням ваших потреб
+            </p>
+            <p class="form_subtitle">
+              Дзвоніть
+              <span class="form_span"> +38063 021 24 07 </span>
+              або лишіть заявку на дзвінок
+            </p>
+            <form class="form_area">
+              <input type="text" placeholder="Ваше ім'я" class="form_input" />
+              <input type="text" placeholder="Ваш телефон" class="form_input" />
+            </form>
+            <a class="form_btn link" href="#final_form_popup">Надіслати</a>
+            <p class="form_commit">
+              *натискаючи кнопку- “Надіслати”, ви надаєте свою згоду на обробку
+              персональних данних
+            </p>
+          </div>
+          <a href="#duties_block" class="popup_close3">
+            <img src="./img/popup_close.svg" alt="close" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="work_form_popup" class="form_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="form_content">
+          <div class="work_form_left_content">
+            <p class="work_form_title">Хочете працювати у нас?</p>
+            <ul class="work_form_list" type="circle">
+              <li class="list_item">Гарантія стабільності</li>
+              <li class="list_item">Дружній колектив</li>
+              <li class="list_item">Гарна заробітня плата</li>
+            </ul>
+            <img
+              class="form_img"
+              src="./img/form_illustration.png"
+              alt="illustration"
+            />
+          </div>
+          <line></line>
+          <div class="form_right_content">
+            <h3 class="form_logo">Догляд 24/7</h3>
+            <p class="form_subtitle">
+              Підберемо доглядальницю за 15 хвилин з урахуванням ваших потреб
+            </p>
+            <p class="form_subtitle">
+              Дзвоніть
+              <span class="form_span"> +38063 021 24 07 </span>
+              або лишіть заявку на дзвінок
+            </p>
+            <form class="form_area">
+              <input type="text" placeholder="Ваше ім'я" class="form_input" />
+              <input type="text" placeholder="Ваш телефон" class="form_input" />
+            </form>
+            <a class="work_form_btn link" href="#final_form_popup">Надіслати</a>
+            <p class="form_commit">
+              *натискаючи кнопку- “Надіслати”, ви надаєте свою згоду на обробку
+              персональних данних
+            </p>
+          </div>
+          <a href="#duties_block" class="popup_close4">
+            <img src="./img/popup_close.svg" alt="close" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <!-- *FINAL_FORM_POPUP_MENU -->
+
+      <div id="final_form_popup" class="final_form_popup">
+        <a href="#duties_block" class="popup_area"></a>
+        <div class="popup_body">
+          <div class="final_form_content">
+            <img src="./img/succes_form_illustration.png" class="final_form_illustration">
+              <h3 class="final_form_title">Дякуємо, Вашу заявку прийнято, менеджер зв'яжеться з Вами найближчим часом</h3>
+              <a href="#duties_block" class="popup_close7">
+                <img src="./img/popup_close.svg" alt="close" />
+              </a>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- *PRICE_PAGE_POPUP_MENU -->
+
+    <div id="info_price_popup" class="info_price_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="info_price_content">
+          <div class="popup_top_content">
+            <h3 class="info_price_title">Доглядальниця погодинно</h3>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <ol class="info_price_popup_text">
+            <li>
+              Коли родичі живуть із пацієнтом і постійна присутність
+              доглядальниці може порушити їхній комфорт.
+            </li>
+            <li>
+              Коли захворювання виникло раптово і необхідна швидка кваліфікована
+              допомога та догляд.
+            </li>
+            <li>
+              Якщо пацієнт наполегливо проти наявності доглядальниці,
+              рекомендується розпочати з коротких та рідкісних візитів,
+              поступово збільшуючи їх частоту та тривалість.
+            </li>
+          </ol>
+          <a class="price_popup_btn link" href="#order_form_popup">
+            Лишити заявку
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="info_price_popup2" class="info_price_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="info_price_content2">
+          <div class="popup_top_content">
+            <h3 class="info_price_title2">
+              Доглядальниця з проживанням може знадобитися у таких випадках:
+            </h3>
+            <a href="#duties_block" class="popup_close8">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <ol class="info_price_popup_text2">
+            <li>
+              Якщо літня людина живе одна і потребує цілодобової допомоги в
+              побутових питаннях, а також в організації дозвілля та режиму дня,
+              що позитивно позначається на її якості життя.
+            </li>
+            <li>
+              Якщо родичі не можуть відвідувати літню людину, робота
+              доглядальниці допомагає зберегти в неї соціальні навички та
+              запобігає розвитку деменції.
+            </li>
+            <li>
+              Якщо людині похилого віку потрібна допомога при пересуванні або
+              якщо він лежачий хворий, якому потрібна регулярна профілактика
+              пролежнів.
+            </li>
+          </ol>
+          <a class="price_popup_btn link" href="#order_form_popup">
+            Лишити заявку
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="info_price_popup3" class="info_price_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="info_price_content2">
+          <div class="popup_top_content">
+            <h3 class="info_price_title2">
+              Доглядальниця в лікарні може бути необхідна у таких випадках:
+            </h3>
+            <a href="#duties_block" class="popup_close1">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <ol class="info_price_popup_text2">
+            <li>
+              При будь-якому стані хворого, який перебуває у стаціонарі у
+              лежачому положенні. Доглядальниця ретельно стежитиме за гігієною і
+              проводитиме профілактику пролежнів, які часто виникають через
+              недостатній догляд у лікарнях.
+            </li>
+            <li>
+              Коли має бути складна операція і пацієнт тривалий час перебуватиме
+              в стаціонарі, або коли потрібна складна програма реабілітації.
+            </li>
+            <li>
+              Якщо пацієнт недієздатний або перебуває у непритомному стані.
+              Доглядальниця вчасно викличе медичний персонал, якщо це необхідно,
+              і не допустить, щоб медики забули про хворого.
+            </li>
+          </ol>
+          <a class="price_popup_btn link" href="#order_form_popup">
+            Лишити заявку
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- *MORE_ABOUT_SERVICE_POPUP_MENU -->
+
+    <div id="about_service" class="about_serivce_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="about_service_content">
+          <div class="about_service_top_content">
+            <h3 class="about_service_title">Доглядальниця погодинно</h3>
+          </div>
+          <a href="#duties_block" class="popup_close5">
+            <img src="./img/popup_close.svg" alt="close" />
+          </a>
+          <div class="about_service_title_block">
+            <p class="service_time">Тривалість послуги</p>
+            <p class="service_time">Вартість з комісією компанії</p>
+          </div>
+          <div class="about_service_area">
+            <div class="about_service_white_block">
+              <p class="service_cost">1 година</p>
+              <p class="service_cost2">від 215 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">1+1 година</p>
+              <p class="service_cost2">від 325 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">2 години</p>
+              <p class="service_cost2">від 265 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">2+2 години</p>
+              <p class="service_cost2">від 465 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">3 години</p>
+              <p class="service_cost2">від 315 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">4 години</p>
+              <p class="service_cost2">від 365 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">5 годин</p>
+              <p class="service_cost2">від 425 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">6 годин</p>
+              <p class="service_cost2">від 465 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">7 годин</p>
+              <p class="service_cost2">від 495 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">8 годин</p>
+              <p class="service_cost2">від 515 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">9 годин</p>
+              <p class="service_cost">від 545 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">10 годин день / ніч</p>
+              <p class="service_cost2">від 565 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">11 годин день / ніч</p>
+              <p class="service_cost2">від 585 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">12 годин день / ніч</p>
+              <p class="service_cost2">від 615 грн</p>
+            </div>
+          </div>
+          <div class="about_service_button_area">
+            <a class="about_serivce_popup_btn link" href="#order_form_popup">
+              Лишити заявку
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about_service2" class="about_serivce_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="about_service_content">
+          <div class="about_service_top_content">
+            <h3 class="about_service_title">Доглядальниця з проживанням</h3>
+          </div>
+          <a href="#duties_block" class="popup_close5">
+            <img src="./img/popup_close.svg" alt="close" />
+          </a>
+          <div class="about_service_title_block">
+            <p class="service_time">Тривалість послуги</p>
+            <p class="service_time">Вартість з комісією компанії</p>
+          </div>
+          <div class="about_service_block">
+            <div class="about_service_white_block">
+              <p class="service_cost">30 днів</p>
+              <p class="service_cost2">450 грн/доба</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">60 днів</p>
+              <p class="service_cost2">460 грн/доба</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">90 днів</p>
+              <p class="service_cost2">440 грн/доба</p>
+            </div>
+          </div>
+          <div class="about_service_button_area">
+            <a class="about_serivce_popup_btn link" href="#order_form_popup">
+              Лишити заявку
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about_service3" class="about_serivce_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="about_service_content">
+          <div class="about_service_top_content">
+            <h3 class="about_service_title">Доглядальниця в лікарню</h3>
+          </div>
+          <a href="#duties_block" class="popup_close5">
+            <img src="./img/popup_close.svg" alt="close" />
+          </a>
+          <div class="about_service_title_block">
+            <p class="service_time">Тривалість послуги</p>
+            <p class="service_time">Вартість з комісією компанії</p>
+          </div>
+          <div class="about_service_block">
+            <div class="about_service_white_block">
+              <p class="service_cost">2 години</p>
+              <p class="service_cost2">від 270 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">4 години</p>
+              <p class="service_cost2">від 370 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">6 годин</p>
+              <p class="service_cost2">від 470 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">9 годин</p>
+              <p class="service_cost2">від 570 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">10 годин день / ніч</p>
+              <p class="service_cost2">від 620 грн</p>
+            </div>
+            <div class="about_service_yellow_block">
+              <p class="service_cost">12 годин день / ніч</p>
+              <p class="service_cost2">від 670 грн</p>
+            </div>
+            <div class="about_service_white_block">
+              <p class="service_cost">Цілодобова</p>
+              <p class="service_cost2">від 750 грн</p>
+            </div>
+          </div>
+          <div class="about_service_button_area">
+            <a class="about_serivce_popup_btn link" href="#order_form_popup">
+              Лишити заявку
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *DUTIES_POPUP_MENU -->
+
+    <div id="duty_popup" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Доглядальниця дбатиме ретельно про проведення всіх необхідних
+              процедур, щоб забезпечити безпечне прийняття душу підопічних, а
+              також допомогти підмити лежачого хворого та переконати літню
+              людину з деменцією прийняти душ. Якщо це необхідно, вона також
+              допоможе у постановці клізми і випорожненні кишечника
+            </p>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup2" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Доглядальниця, крім прямого догляду за підопічним, також
+              займається вирішенням повного спектру побутових завдань. Вона може
+              приготувати корисні та смачні страви, а також дотримуватися
+              рекомендацій лікаря щодо харчування
+            </p>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup3" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Доглядальниця закуповує тільки свіжі та якісні продукти для
+              підопічного відповідно до затвердженого замовником списку.
+              Щомісяця вона надає звіт про витрати за допомогою чеків. Ця
+              система контролю витрат дозволяє уникнути зайвих витрат на
+              харчування і забезпечує контроль якості продуктів, що
+              закуповуються
+            </p>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup4" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Професійна доглядальниця запобігатиме виникненню пролежнів у
+              лежачого хворого, стежачи за проведенням рекомендованих лікарем
+              протипролежневих процедур вчасно. Правильний та уважний догляд
+              допоможе зберегти життя підопічному та прискорити процес
+              реабілітації
+            </p>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup5" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Проведення легких розминок або фізкультурних вправ під контролем
+              доглядальниці допомагає уникнути застійних явищ у різних частинах
+              тіла, включаючи легені, що запобігає виникненню пневмонії. Ці
+              вправи підвищують загальний тонус хворого і є необхідною умовою
+              якісної реабілітації
+            </p>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup6" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Доглядальниця не лише підтримує бесіду, а й допомагає підопічному
+              зберегти навички соціальної комунікації. Така взаємодія
+              благотворно позначається на розумових здібностях літньої людини та
+              підвищує її якість життя   
+            </p>
+            <a href="#duties_block" class="popup_close2">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup7" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Доглядальниця має підтримувати чистоту в кімнаті, де знаходиться
+              підопічний, а якщо хворий живе один, то у всій квартирі. Її
+              обов'язки включають використання пилососа для прибирання, миття
+              підлоги, горизонтальних поверхонь, миття посуду, прибирання
+              санітарних вузлів та догляд за побутовою технікою
+            </p>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup8" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Доглядальниця може виконувати додаткові доручення, такі як
+              організація походу до лікаря, відвідування аптеки, супровід у
+              гості, отримання потрібних документів та довідок, турбота про
+              свійських тварин, підтримання зв'язку з родичами та надання звітів
+              про стан підопічного
+            </p>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup9" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Лікарі рекомендують прогулянки на свіжому повітрі при різних
+              станах хворих, оскільки свіже повітря, відкриті простори та
+              сонячне світло можуть відновити життєві сили та покращити настрій.
+              Завдання доглядальниці полягає в організації прогулянок та
+              забезпеченні їхньої безпеки
+            </p>
+            <a href="#duties_block" class="popup_close1">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="duty_popup10" class="duty_popup">
+      <a href="#duties_block" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="popup_top_content">
+            <p class="popup_text">
+              Для дотримання суворого розпорядку дня, який може включати прийом
+              лікарських препаратів, вимірювання тиску, проведення
+              профілактичних процедур та інші питання реабілітації, фіксація
+              виконаних дій у щоденнику догляду допомогає систематизувати
+              процес. При необхідності доглядальниця виконуватиме фіксацію
+              приоритетів визначених замовником
+            </p>
+            <a href="#duties_block" class="popup_close">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
+          </div>
+          <a href="#order_form_popup" class="card_popup_btn link">
+            Замовити доглядальницю
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="telo">
+     
+      </div>
+    </div>
+    
+<script>
+  const accordion = document.getElementsByClassName('accordion_main_content');
+
+  for ( i=0; i<accordion.length; i++ ){
+    accordion[i].addEventListener('click', function() {
+      this.classList.toggle('active')
+    })
+  }
+</script>
+
+
+<script>
+
+  var menuList = document.getElementById("menuList");
+
+  menuList.style.maxHeight = "0px";
+  
+  function burgerMenu() {
+
+   if(menuList.style.maxHeight == "0px")
+   {
+     menuList.style.maxHeight = "800px"
+   }
+   else  
+   {
+     menuList.style.maxHeight = "0px"
+   }
+
+  }
+
+</script>
+
+
+
   </body>
 </html>
-
-
-
-
-
-
