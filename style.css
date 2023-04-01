@@ -103,6 +103,9 @@ section {
 body {
   line-height: 1;
 }
+
+/* !SMOOTH_SCROLL */
+
 html {
   scroll-behavior: smooth;
 }
@@ -460,7 +463,7 @@ justify-content: center;
 /* *PRICE_PAGE_SECTION */
 
 .price_page {
-  height: 63vh;
+  height: 610px;
   background: url(./img/background_illustration.png);
   background-color: #eff2e0;
   background-position: center;
@@ -800,7 +803,7 @@ justify-content: center;
 /* *QUESTION_PAGE_SECTION  */
 
 .popular_question {
-  height: 79vh;
+  height: 700px;
   background: url(./img/background2.png);
   background-color: #eff2e0;
   background-position: center;
@@ -817,7 +820,7 @@ justify-content: center;
   text-align: center;
   letter-spacing: -0.005em;
   color: #404040;
-  margin-bottom: 85px;
+  margin-bottom: 60px;
 }
 .accordion_area {
   display: flex;
@@ -827,7 +830,7 @@ justify-content: center;
 .accordion {
   display: flex;
   flex-direction: column;
-  max-height: 590px;
+  max-height: 600px;
   width: 100%;
   max-width: 800px;
   overflow: auto;
@@ -881,7 +884,7 @@ justify-content: center;
 .accordion .accordion_main_content.active .question_block_img {
   display: none;
 }
-.accordion .accordion_main_content.active .question_block_img2::before {
+.accordion .accordion_main_content.active .question_block_img2{
   display: block;
 }
 .accordion_label {
@@ -1743,6 +1746,9 @@ justify-content: center;
     padding: 0 30px;
   }
 }
+
+/* !ГРИД ХОУМТЕЙБЛ ТЕПЕРЬ ПО ОДНОЙ НА ФРАКЦИЮ */
+
 @media screen and (max-width: 1200px) {
   .home_table_area {
     display: grid;
@@ -1764,6 +1770,13 @@ justify-content: center;
     margin: 0;
   }
 }
+
+/* !КАРТОЧКИ ДЬЮТИСЬ ПО ДВЕ НА ФРАКЦИЮ */
+
+/* !МАСШТАБИРУЮ ХЭДЕР */
+
+/* !ПРАВАЯ ЧАСТЬ ФУТЕРА  В КОЛОНКЕ */
+
 @media screen and (max-width: 1150px) {
   .price_page {
     padding: 74px 30px;
@@ -1826,6 +1839,11 @@ justify-content: center;
     flex-direction: column;
   }
 }
+
+/* !МАСШТАБИРУЮ ХЕДЕР  */
+
+/* !МАСШТАБИРУЮ ФУТЕР*/
+
 @media screen and (max-width: 1050px) {
   .header_social_img {
     margin-right: 26px;
@@ -1859,7 +1877,12 @@ justify-content: center;
     margin-right: 80px;
   }
 }
-@media screen and (max-width: 1050px) {
+
+/* !МАСШТАБИРУЮ ХЕДЕР ИЛЛЮСТРАЦИЮ И УБИРАЮ РАСПИСАНИЕ */
+
+/* !МАСШТАБИРУЮ ФУТЕР*/
+
+@media screen and (max-width: 1000px) {
   .header_time_sub {
     display: none;
   }
@@ -1884,6 +1907,12 @@ justify-content: center;
   }
 }
 
+/* !МЕНЯЮ НА ПРАЙС СЕКЦИИ ИЛЛЮСТРАЦИЮ МАСШТАБИРУЮ*/
+
+/* !ПРАЙС КАРТОЧКИ В КОЛОНКУ*/
+
+/* !МАСШТАБИРУЮ СЕКЦИИ ДЬЮТИС*/
+
 @media screen and (max-width: 900px) {
   .price_page_content {
     display: flex;
@@ -1898,7 +1927,7 @@ justify-content: center;
     margin-right: 0;
   }
   .price_page {
-    height: 70vh;
+    height: 1000px;
     background: url(./img/mobile_backgound_illustration1.png);
     background-color: #eff2e0;
     background-position: center;
@@ -1917,18 +1946,27 @@ justify-content: center;
     margin-bottom: 50px;
   }
   .duties {
-    padding: 850px 0 126px 0;
+    padding: 490px 0 126px 0;
     background: #f5f5f5;
   }
   .footer_form_content {
     margin-right: 50px;
   }
 }
+
+/* !УМЕНЬШАЮ ШИРИНУ АККОРДЕОНА (СКРОЛЛ АРЕИ)  */
+
+/* !МЕНЯЮ ИЛЛЮСТРАЦИЮ И МАСШТАБИРУЮ АККОРДЕОН СЕКЦИЮ  */
+
+/* !МАСШТАБИРУЮ ФУТЕР И МЕНЯЮ ПОЛОЖЕНИЮ ОБЬЕКТОВ ОТНОСИТЕЛЬНО ДИЗАЙНА */
+
+/* !МАСШТАБИРУЮ ХЭДЕР */
+
 @media screen and (max-width: 850px) {
   .accordion {
     display: flex;
     flex-direction: column;
-    height: 590px;
+    height: 610px;
     width: 100%;
     max-width: 605px;
     overflow: auto;
@@ -1959,13 +1997,13 @@ justify-content: center;
     max-width: 340px;
   }
   .popular_question {
-    height: 90vh;
+    height: 860px;
     background: url(./img/Group\ 146.png);
     background-color: #eff2e0;
     background-position: center;
     background-size: 768px;
     background-repeat: no-repeat;
-    padding: 60px 0 50px 0;
+    padding: 60px 0 0 0;
   }
   .pop_question_title {
     margin-bottom: 50px;
@@ -2071,12 +2109,19 @@ justify-content: center;
   }
 }
 
+/* !МАСШТАБИРУЮ КНОПКУ */
+
 @media screen and (max-width: 836px) {
   .footer_button_area {
     position: relative;
     top: 135px;
   }
 }
+
+/* !МАСШТАБИРУЮ ИЛЛЮСТРАЦИЮ ХЭДЕР  */
+
+/* !СТАВЛЮ КОНТЕНТ ФУТЕРА В КОЛОНКУ*/
+
 @media screen and (max-width: 800px) {
   .home_illustration {
     position: relative;
@@ -2124,9 +2169,23 @@ justify-content: center;
   .popup_close5 {
     position: relative;
     bottom: 75px;
-    left: 270px;
+    margin-left: 25px; 
+    margin-right: 30px;
+  }
+  .popup_close3 {
+    position: relative;
+    bottom: 250px;
   }
 }
+
+/* !УБИРАЮ ИЛЛЮСТРАЦИЮ С ХЭДЕРА, ДОБАВЛЯЮ БУРГЕР И ПЕРЕНОШУ СОЦИАЛКИ ВНИЗ ОТНОСИТЕЛЬНО ДИЗАЙНА*/
+
+/* !МЕНЯЮ ПОПАП ФОРМУ ОТПРАВКИ ОТНОСИТЕЛЬНО ДИЗАЙНА УБИРАЯ ЛЕВЫЙ КОНТЕНТ И МЕНЯЮ ОКОНЧАТЕЛЬНУЮ ФОРМУ ОТПРАВКИ (FINAL_FORM) */
+
+/* !МАСШТАБИРУЮ ПОПАП ПРАЙСА*/
+
+/* !МАСШТАБИРУЮ СЕКЦИЮ ДЬЮТИС */
+
 @media screen and (max-width: 755px) {
   .header_burger_icon {
     display: block;
@@ -2232,8 +2291,12 @@ border-radius: 34px;
     background: #ffffff;
     align-items: center;
   }
+  .duties {
+    padding: 490px 0 91px 0;
+    background:  #FFFCED;
+  }   
   .duty_page_title {
-    margin-left: 20px;
+    margin-left: 70px;
     max-width: 560px;
     font-size: 55px;
   }
@@ -2291,7 +2354,7 @@ border-radius: 34px;
 .popup_close4,.popup_close3  {
   position: relative;
   bottom: 215px;
-  right: 10px;
+
 }
 .popup_close5 {
   position: relative;
@@ -2413,6 +2476,11 @@ border-radius: 34px;
   margin-right: 0px;
 }
 }
+
+/* !ДЬЮТИ БЛОК ПО ОДНОМУ ОБЬЕКЬУ НА ФРАКЦИЮ + МАСШТАБИРУЮ  */
+
+/* !ВСЕ ОБЬЕКТЫ ФУТЕРА КРОМЕ ФОРМЫ В КОЛОНКУ + МАСШТАБИРУЮ (ХАПАЮ+БУХАЮ = КСГО */
+
 @media screen and (max-width: 700px) {
   .duties_block {
     display: grid;
@@ -2462,6 +2530,11 @@ border-radius: 34px;
     margin-right: 0px;
   }
 }
+
+/* !МЕНЯЮ ХОУМТЕЙБЛ ПО ВИДУ + МАСШТАБИРУЮ С КНОПКАМИ ОТНОСИТЕЛЬНО ДИЗАЙНА */
+
+/* !МАСШТАБИРУЮ ФУТЕР И АККОРДЕОН */
+
 @media screen and (max-width: 650px) {
   .home_btn_area {
     display: flex;
@@ -2501,6 +2574,24 @@ border-radius: 34px;
   .home_table_area {
     margin-bottom: 50px;
   }
+  .home_table,
+  .home_table2 {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+  }
+  .home_table {
+    padding: 5px 20px 5px 18px;
+    width: 360px;
+    box-sizing: border-box;
+  }
+  .home_table2 {
+    width: 360px;
+    padding: 6px 0px 5px 18px;
+    box-sizing: border-box;
+    margin: 0;
+  }
   .footer_main_contact1 {
    font-size: 25px;
    text-align: center;
@@ -2521,28 +2612,15 @@ border-radius: 34px;
  .question_block_img {
   margin-left: 30px;
  }
-  .home_table,
-.home_table2 {
-  background: #FFFFFF;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  border: none;
-}
-.home_table {
-  padding: 5px 20px 5px 18px;
-  width: 360px;
-  box-sizing: border-box;
-}
-.home_table2 {
-  width: 360px;
-  padding: 6px 0px 5px 18px;
-  box-sizing: border-box;
-  margin: 0;
-}
+
 .popup_close3 {
   bottom: 230px;
 }
 }
+
+/* !МАСШТАБИРУЮ АККОРДЕОН (ОПЯТЬ?) */
+
+/* !МАСШТАБИРУЮ ПРАЙС_ПОПАП */
 
 @media screen and (max-width: 600px) {
   .about_service_title {
@@ -2603,7 +2681,7 @@ border-radius: 34px;
     border-bottom-right-radius: 10px;
     width: 98%;
     max-width: 800px;
-    padding: 0 70px 0 50px;
+    padding: 0 70px 0 20px;
   }
   .accordion .accordion_main_content.active .accordion_content {
     padding: 10px 70px 40px 20px;
@@ -2612,17 +2690,27 @@ border-radius: 34px;
     max-width: 800px;
     height: auto;
   }
+  .accordion_text {
+    width: auto ;
+  }
   .popup_close5 {
     position: relative;
-    bottom: 115px;
-    left: 195px;
+    bottom: 100px;
+
   }
 }
+
+/* !У ТАЙТЛОВ В СЕКЦИИ МЕНЯЮ РАЗМЕР */
+
+/* !МАСШТАБИРУЮ ХЭДЕР */
+
+/* !МАСШТАБИРУЮ ПОПАП ПРАЙС И ПОПАП БОДИ (ТЕЛО ДЛЯ ВСЕХ ПОПАПОВ)*/
+
 @media screen and (max-width: 550px) { 
   .popup_close5 {
     position: relative;
-    bottom: 115px;
-    left: 170px;
+    bottom: 100px;
+    left: 200px;
   }
   .header_info_content {
     display: flex;
@@ -2708,7 +2796,17 @@ border-radius: 34px;
     padding: 69px 20px 43px 20px;
   }
 }
+
+/* !МАСШТАБИРУЮ ФУТЕР ОТНОСИТЕЛЬНО ДИЗАЙНА И УБИРАЮ ФОРМУ ОТПРАВКИ */
+
+/* !КАРТОЧКИ ДЬЮТИС СТАВЛЮ ПО ДВА ОБЬЕКТА В ФРАКЦИЮ + МАСШТАБИРУЮ ОТДЕЛЬНО КАЖДУЮ ЕБАНУЮ ФОТКУ НЕНАВИЖУ НТМЛ */
+
+/* !МАСШТАБИРУЮ БЭКГРАУНД ИЛЛЮСТРАЦИИ У КАЖДОЙ СЕКЦИИ ОТДЕЛЬНО */
+
 @media screen and (max-width: 500px) { 
+  .footer {
+    padding: 58px 30px 0 30px;
+  }
   .footer_form_content {
     display: none;
   }
@@ -2760,9 +2858,9 @@ border-radius: 34px;
     margin-bottom: 60px;
   }
   .duties {
-    padding: 850px 0 126px 0;
+    padding: 370px 0 45px 0;
     background:  #FFFCED;
-  }
+  }   
   .duties_block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2855,11 +2953,19 @@ border-radius: 34px;
   .duty_img10 {
     margin-bottom: 22px;
   }
-   
    .duty_card_title, .duty_card_title1  {
     font-size: 18px;
   } 
 }
+
+/* !ОПЯТЬ МАСШТАБИРУЮ ХЭДЕР И У ЛОГО МЕНЯЮ ЦВЕТ ОТНОСИТЕЛЬНО ДИЗАЙНА   */
+
+/* !МАСШТАБИРУЮ АККОРДЕОН И УБИРАЮ СКРОЛЛ   */
+
+/* !МАСШТАБИРУЮ ХОУМ СЕКЦИЮ  */
+
+/* !МАСШТАБИРУЮ ПОПАП ПРАЙС  + МАСШТАБИРУЮ ПОПАП ФОРМУ ОТПРАВКИ */
+
 @media screen and (max-width: 450px) {
    .header_contact  {
     font-size: 20px;
@@ -2909,10 +3015,10 @@ border-radius: 34px;
   .popular_question {
     height: 100%;
     max-height: 5000px;
-    background: url(./img/background2.png);
+    background: url(./img/mobile_background_illustration2.png);
     background-color: #eff2e0;
     background-position: center;
-    background-size: 1440px;
+    background-size: 429px;
     background-repeat: no-repeat;
     padding: 60px 0 95px 0;
   }
@@ -2949,7 +3055,7 @@ border-radius: 34px;
     border-bottom-right-radius: 10px;
     width: 99%;
     max-width: 800px;
-    padding: 0 70px 0 50px;
+    padding: 0 70px 0 20px;
   }
   .accordion .accordion_main_content.active .accordion_content {
     padding: 10px 70px 40px 20px;
@@ -3010,15 +3116,14 @@ border-radius: 34px;
   display: flex;
   justify-content: center;
 }
-.popup_body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px 43px 30px;
 }
-}
+
+
+/* !МАСШТАБИРУЮ ПРАЙС ПОПАП И ДЬЮТИ ПОПАП  */
+
+
 @media screen and (max-width: 400px) {
+  
   .info_price_content {
     padding: 40px 30px 63px 35px;
   }
@@ -3053,7 +3158,7 @@ border-radius: 34px;
 }
 .popup_close {
   position: relative;
-  top: 10px;
+  top: 15px;
   left: 15px;
 }
 .info_price_popup_text2 {
@@ -3095,14 +3200,56 @@ border-radius: 34px;
 .popup_close8 {
   bottom: 300px;
 }
+.popup_close2 {
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
+}
+
+/* !МАСШТАБИРУЮ ХЭДЕР */
+
+/* !МАСШТАБИРУЮ ХОУМ КНОПКИ */
+
+/* !МАСШТАБИРУЮ АККОРДЕОН */
+
+/* !МАСШТАБИРУЮ ПОПАП ФОРМУ ОТПРАВКИ */
+
+
 @media screen and (max-width: 360px) {
+  
+  .header {
+    padding: 20px 10px 15px 0;
+  }
+  .header_contact  {
+    font-size: 20px;
+   }
+   .header_info_content {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .home_btn1, .home_btn2 {
+    width: 100%;
+    min-width: 270px;
+    max-width: 312px;
+    height: 52px;
+    font-size: 15px;
+  }
+  .price_card {
+    width: 100%;
+    max-width: 315px;
+  }
   .duties_block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 17px;
     row-gap: 18px;
   }
+  .pop_question_title {
+    margin-bottom: 20px;
+   }
   .accordion_title {
     font-family: "Gilroy";
     font-style: normal;
@@ -3113,7 +3260,7 @@ border-radius: 34px;
   }
   .accordion_text {
     font-size: 16px;
-    max-width: 800px;
+    width: auto ;
   }
   .accordion .accordion_main_content .accordion_label {
     position: relative;
@@ -3138,10 +3285,10 @@ border-radius: 34px;
     border-bottom-right-radius: 10px;
     width: 99%;
     max-width: 800px;
-    padding: 0 70px 0 20px;
+    padding: 0 20px 0 20px;
   }
   .accordion .accordion_main_content.active .accordion_content {
-    padding: 10px 20px 40px 20px;
+    padding: 10px 20px 20px 20px;
     box-sizing: border-box;
     width: 99%;
     max-width: 800px;
@@ -3154,5 +3301,127 @@ border-radius: 34px;
   }
   .service_cost {
     max-width: 100px;
+  }
+  .popup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 69px 30px 43px 30px;
+  }
+  .form_content {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+   }
+   .form_right_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+   }
+   .form_subtitle {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+.final_form_content {
+  padding: 85px 20px;
+}
+.popup_close7 {
+  position: relative;
+  bottom: 110px;
+  left: 0;
+}
+.popup_close3 {
+  bottom: 240px;
+ left: 0;
+}
+.form_commit {
+ font-size: 13px;
+}
+}
+
+/* !МАСШТАБИРУЮ КАРТОЧКИ + УМЕНЬШАЮ КОЛУМН ГЕП */
+
+/* !МАСШТАБИРУЮ ПОПАП ФОРМУ ОТПРАВКИ + ПОПАП ФОРМУ ПРАЙСА (ОПЯТЬ?) */
+
+/* !МАСШТАБИРУЮ АККОРДЕОН */
+
+@media screen and (max-width:300px) {
+  .duties_block {
+    column-gap: 10px;
+  }
+  .duty_card, .duty_card1  {
+    width: 100%;
+    max-width: 130px;
+    height: 170px;
+    padding: 20px 20px;
+  }
+  .popup_close5 {
+    position: relative;
+    bottom: 115px;
+    left: 90px;
+  }
+  .form_right_content {
+    margin-left: 0;
+   }
+   .form_input {
+    width: 100%;
+    max-width: 230px;
+   }
+   .form_btn {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  justify-content: center;
+  }
+   .mobile_social_link {
+    margin-right: 20px;
+  }
+  .about_service_white_block {
+    padding: 17px 10px 24px 15px;
+  }
+  .about_service_yellow_block {
+    padding: 17px 10px 24px 15px;
+  }
+  .accordion .accordion_main_content .accordion_label {
+    position: relative;
+    padding: 5px 20px;
+    background: #ffffff;
+    border: 1px solid rgba(45, 135, 92, 0.2);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: content-box;
+    width: 83%;
+    max-width: 800px;
+  }
+  .accordion .accordion_main_content .accordion_content {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    height: 0;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 99%;
+    max-width: 800px;
+    padding: 0 20px 0 20px;
+  }
+  .accordion .accordion_main_content.active .accordion_content {
+    padding: 10px 20px 20px 20px;
+    box-sizing: border-box;
+    width: 99%;
+    max-width: 800px;
+    height: auto;
+  }
+  .popup_close3 {
+    bottom: 240px;
+   right: 1200px;
   }
 }
