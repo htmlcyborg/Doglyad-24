@@ -103,12 +103,56 @@ section {
 body {
   line-height: 1;
 }
+/* ! */
+* {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Light", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+/* ! */
 
 /* !SMOOTH_SCROLL */
 
 html {
   scroll-behavior: smooth;
 }
+
+/* !POPUP_SCROLL */
+
+.about_serivce_popup::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ie 10+ */
+.about_serivce_popup {
+  -ms-overflow-style: none;
+}
+
+.duty_popup::-webkit-scrollbar {
+  width: 0;
+}
+
+.duty_popup {
+  -ms-overflow-style: none;
+}
+.form_popup::-webkit-scrollbar {
+  width: 0;
+}
+
+.form_popup {
+  -ms-overflow-style: none;
+}
+.info_price_popup::-webkit-scrollbar {
+  width: 0;
+}
+
+.info_price_popup {
+  -ms-overflow-style: none;
+}
+
+
 blockquote,
 q {
   quotes: none;
@@ -125,52 +169,7 @@ table {
   border-spacing: 0;
 }
 body {
-  font-family: "Gilroy", sans-serif;
   background: #fffced;
-}
-
-/* *FONTS */
-
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Thin.ttf);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-UltraLight.ttf);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Light.ttf);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Regular.ttf);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Medium.ttf);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Semibold.ttf),
-    url(./fonts/Gilroy-Semibold.woff);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Bold.ttf);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Extrabold.ttf);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Black.ttf);
-}
-@font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") url(./fonts/Gilroy-Heavy.ttf);
 }
 .container {
   max-width: 1200px;
@@ -178,7 +177,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
 }
-
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 /* *HEADER */
 
 .header {
@@ -193,7 +192,7 @@ body {
   align-items: center;
 }
 .header_logo {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -210,7 +209,7 @@ body {
   margin-right: 80px;
 }
 .header_time_sub {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Light", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -222,7 +221,7 @@ body {
   text-decoration: none;
 }
 .header_contact {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -238,9 +237,9 @@ body {
   border: none;
   padding: 10px 15px;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   color: #4b4b4a;
@@ -292,7 +291,6 @@ body {
   color: #4f4e4e;
 }
 
-
 /* *BUTTON_SECTION */
 
 .button_section {
@@ -300,7 +298,7 @@ body {
   padding: 20px 0;
 }
 .section_btn {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -324,16 +322,15 @@ body {
   box-sizing: border-box;
   width: 100%;
   justify-content: center;
- 
 }
 .btn_block {
   background: #eff2e0;
   width: 100%;
-height: 90px;
-box-sizing: border-box;
-padding: 20px 0 20px 0;
-display: flex;
-justify-content: center;
+  height: 90px;
+  box-sizing: border-box;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
 }
 .section_btn:last-of-type {
   margin-right: 0;
@@ -354,7 +351,7 @@ justify-content: center;
   flex-direction: column;
 }
 .home_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 55px;
@@ -393,18 +390,18 @@ justify-content: center;
 }
 .home_table_text {
   max-width: 200px;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 97.8%;
   color: #535353;
 }
 .home_table_text2 {
   max-width: 250px;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 19px;
   line-height: 97.8%;
   color: #535353;
@@ -474,7 +471,7 @@ justify-content: center;
 .price_page_title {
   display: flex;
   justify-content: center;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -504,7 +501,7 @@ justify-content: center;
   margin-right: 0px;
 }
 .price_card_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -519,7 +516,7 @@ justify-content: center;
   width: 100%;
   border: none;
   padding: 16px 0;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -534,7 +531,7 @@ justify-content: center;
   background: #a60b0b;
   border-radius: 34px;
   border: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -554,6 +551,18 @@ justify-content: center;
   background: #eb2121;
   transition: 0.6s;
 }
+.price_card_subtitle1 {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  color: #404040;
+  max-width: 250px;
+  text-align: center;
+  margin-bottom: 5px;
+}
 .price_card_subtitle {
   font-family: "Gilroy";
   font-style: normal;
@@ -571,7 +580,7 @@ justify-content: center;
   border-radius: 0px 0px 10px 10px;
   box-sizing: border-box;
   padding: 25px 0;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -592,7 +601,7 @@ justify-content: center;
 .duty_page_title {
   display: flex;
   justify-content: center;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -709,7 +718,7 @@ justify-content: center;
   margin-bottom: 22px;
 }
 .duty_card_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -720,7 +729,7 @@ justify-content: center;
   max-width: 211px;
 }
 .duty_card_title1 {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -748,7 +757,7 @@ justify-content: center;
   margin-left: 63px;
 }
 .application_block_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -758,7 +767,7 @@ justify-content: center;
   width: 500px;
 }
 .application_block_subtitle {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -766,9 +775,12 @@ justify-content: center;
   color: #404040;
   max-width: 344px;
   margin-bottom: 23px;
+ 
 }
 .application_block_span {
+  font-family: "Gilroy-Medium", sans-serif;
   color: #2d875c;
+  font-weight: 700;
 }
 .application_block_btn {
   padding: 12px 40px;
@@ -782,7 +794,7 @@ justify-content: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -812,7 +824,7 @@ justify-content: center;
   padding: 60px 0 95px 0;
 }
 .pop_question_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -884,7 +896,7 @@ justify-content: center;
 .accordion .accordion_main_content.active .question_block_img {
   display: none;
 }
-.accordion .accordion_main_content.active .question_block_img2{
+.accordion .accordion_main_content.active .question_block_img2 {
   display: block;
 }
 .accordion_label {
@@ -895,7 +907,7 @@ justify-content: center;
 }
 
 .accordion_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -912,9 +924,8 @@ justify-content: center;
   border-top: none;
 }
 
-
 .accordion_text {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.8vh;
@@ -946,16 +957,15 @@ justify-content: center;
   border-bottom-right-radius: 10px;
   width: 100%;
   max-width: 800px;
-  padding: 0 70px 0 50px;
+  padding: 0 70px 0 40px;
 }
 .accordion .accordion_main_content.active .accordion_content {
-  padding: 10px 70px 50px 50px;
+  padding: 10px 70px 40px 50px;
   box-sizing: border-box;
   width: 100%;
   max-width: 800px;
   height: auto;
 }
-
 
 /* *FOOTER  */
 
@@ -964,7 +974,7 @@ justify-content: center;
   padding: 58px 30px 86px 30px;
 }
 .footer_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -982,7 +992,6 @@ justify-content: center;
 
 /* *FOOTER_LEFT_SIDE */
 
-
 .footer_form_content {
   margin-right: 138px;
 }
@@ -994,7 +1003,7 @@ justify-content: center;
   display: none;
 }
 .footer_form_content_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -1012,9 +1021,9 @@ justify-content: center;
   width: 231px;
   box-sizing: border-box;
   background: #ffffff;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
   line-height: 142.2%;
   outline: none;
@@ -1027,9 +1036,9 @@ justify-content: center;
   width: 293px;
   box-sizing: border-box;
   background: #ffffff;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
   line-height: 142.2%;
   outline: none;
@@ -1045,7 +1054,7 @@ justify-content: center;
   border-radius: 34px;
   padding: 14px 60px;
   border: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -1055,7 +1064,7 @@ justify-content: center;
   margin-right: 27px;
 }
 .footer_form_content_sub {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Light", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1083,7 +1092,7 @@ justify-content: center;
   margin-right: 0;
 }
 .footer_contact {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1092,7 +1101,7 @@ justify-content: center;
   margin-bottom: 13px;
 }
 .footer_main_contact1 {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -1100,7 +1109,7 @@ justify-content: center;
   color: #ffffff;
 }
 .footer_main_contact2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -1111,7 +1120,7 @@ justify-content: center;
   display: none;
 }
 .footer_main_adres {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -1123,6 +1132,7 @@ justify-content: center;
 
 .form_popup {
   position: fixed;
+  overflow: scroll;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.432);
@@ -1172,7 +1182,7 @@ justify-content: center;
   margin-right: 83px;
 }
 .form_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -1185,7 +1195,7 @@ justify-content: center;
   margin-top: 46px;
 }
 .work_form_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -1193,9 +1203,10 @@ justify-content: center;
   color: #404040;
   margin-left: 15px;
   margin-top: 36px;
+  margin-bottom: 5px;
 }
 .form_logo {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1204,9 +1215,9 @@ justify-content: center;
   margin-bottom: 27px;
 }
 .form_subtitle {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 142.2%;
   color: #404040;
@@ -1225,9 +1236,9 @@ justify-content: center;
 }
 .form_input {
   padding: 15px 20px 15px 20px;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
   line-height: 142.2%;
   color: #7e7e7e;
@@ -1255,7 +1266,7 @@ justify-content: center;
   cursor: pointer;
 }
 .form_commit {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Light", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1290,7 +1301,7 @@ justify-content: center;
   margin-bottom: 29px;
 }
 .list_item {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
@@ -1344,14 +1355,14 @@ justify-content: center;
   margin-right: 17px;
 }
 .final_form_title {
-  font-family: "Gilroy";
+ font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
   line-height: 154.2%;
   max-width: 285px;
   text-align: center;
-  color: #404040;
+  color: #404040; 
 }
 .popup_close7 {
   position: relative;
@@ -1363,6 +1374,7 @@ justify-content: center;
 
 .info_price_popup {
   position: fixed;
+  overflow:scroll;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.432);
@@ -1442,30 +1454,30 @@ justify-content: center;
   max-width: 535px;
   margin-right: 50px;
 }
-  .info_price_popup_text {
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 165.9%;
-    color: #4f4e4e;
-    margin-bottom: 46px;
-    margin-right: 20px;
-    margin-top: 30px;
-    max-width: 450px;
-  }
-  .info_price_popup_text2 {
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 165.9%;
-    color: #4f4e4e;
-    max-width: 535px;
-    margin-bottom: 46px;
-    margin-right: 40px;
-    margin-top: 30px;
-  }
+.info_price_popup_text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 165.9%;
+  color: #4f4e4e;
+  margin-bottom: 46px;
+  margin-right: 20px;
+  margin-top: 30px;
+  max-width: 450px;
+}
+.info_price_popup_text2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 165.9%;
+  color: #4f4e4e;
+  max-width: 535px;
+  margin-bottom: 46px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
 .price_popup_btn {
   padding: 13px 43px;
   background: #a60b0b;
@@ -1489,10 +1501,10 @@ justify-content: center;
   position: relative;
   bottom: 0px;
 }
-
 .about_serivce_popup {
   position: fixed;
   width: 100%;
+  overflow:scroll;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.432);
   top: 0;
@@ -1501,6 +1513,11 @@ justify-content: center;
   visibility: hidden;
   transition: all 0.5s ease 0s;
 }
+
+
+
+/* ! */
+
 .about_service_content {
   background: #ffffff;
   border: 1px solid rgba(45, 135, 92, 0.39);
@@ -1517,13 +1534,13 @@ justify-content: center;
   justify-content: center;
   transition: all 0.5s ease 0s;
   z-index: 1;
+
   opacity: 0;
   transform: translate(0px, -60%);
-  
 }
 .about_service_top_content {
   display: flex;
-  padding: 0 0   40px 0;
+  padding: 0 0 40px 0;
   justify-content: center;
 }
 .about_serivce_popup:target {
@@ -1539,7 +1556,7 @@ justify-content: center;
   opacity: 1;
 }
 .about_service_title {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -1557,7 +1574,7 @@ justify-content: center;
   align-items: center;
 }
 .service_time {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -1619,7 +1636,7 @@ justify-content: center;
 }
 
 .service_cost {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Light", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1627,7 +1644,7 @@ justify-content: center;
   color: #4f4e4e;
 }
 .service_cost2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Light", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1657,6 +1674,7 @@ justify-content: center;
 /* *DUTIES_POPUP */
 
 .duty_popup {
+  overflow: auto;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1680,7 +1698,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 69px 60px 43px 60px;
+  padding: 0 60px 43px 60px;
 }
 .popup_area {
   position: absolute;
@@ -1708,9 +1726,9 @@ justify-content: center;
   transform: translate(0px, -60%);
 }
 .popup_text {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 165.9%;
   color: #4f4e4e;
@@ -1725,7 +1743,7 @@ justify-content: center;
   box-shadow: inset 3px 3px 11px rgba(0, 0, 0, 0.25);
   border-radius: 34px;
   border: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1737,7 +1755,6 @@ justify-content: center;
   display: flex;
   justify-content: space-around;
 }
-
 
 /* !MOBILE_ADAPTIVE */
 
@@ -1907,7 +1924,7 @@ justify-content: center;
   }
 }
 
-/* !МЕНЯЮ НА ПРАЙС СЕКЦИИ ИЛЛЮСТРАЦИЮ МАСШТАБИРУЮ*/
+/* !МЕНЯЮ НА ПРАЙС СЕКЦИИ ИЛЛЮСТРАЦИЮ, ПРАЙС КАРТЫ ПО СКРОЛУ*/
 
 /* !ПРАЙС КАРТОЧКИ В КОЛОНКУ*/
 
@@ -1916,24 +1933,29 @@ justify-content: center;
 @media screen and (max-width: 900px) {
   .price_page_content {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    overflow: auto;
+    justify-content: start;
     align-items: center;
+    flex-direction: column;
+     max-height: 410px;
+    width: 100%;
+    max-width: 700px;
+    overflow-x: hidden;
   }
   .price_card {
     width: 100%;
-    max-width: 553px;
+    max-width: 540px;
     margin-bottom: 25px;
     margin-right: 0;
   }
   .price_page {
-    height: 1000px;
+    height: 650px;
     background: url(./img/mobile_backgound_illustration1.png);
     background-color: #eff2e0;
     background-position: center;
     background-size: 820px;
     background-repeat: no-repeat;
-    padding: 74px 0;
+    padding: 74px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1946,7 +1968,7 @@ justify-content: center;
     margin-bottom: 50px;
   }
   .duties {
-    padding: 490px 0 126px 0;
+    padding: 30px 0 126px 0;
     background: #f5f5f5;
   }
   .footer_form_content {
@@ -2088,7 +2110,7 @@ justify-content: center;
     margin-right: 170px;
   }
   .footer_main_contact1 {
-    font-size: 30px;
+    font-size: 27px;
   }
   .footer_main_contact2 {
     font-size: 25px;
@@ -2169,7 +2191,7 @@ justify-content: center;
   .popup_close5 {
     position: relative;
     bottom: 75px;
-    margin-left: 25px; 
+    margin-left: 25px;
     margin-right: 30px;
   }
   .popup_close3 {
@@ -2204,13 +2226,13 @@ justify-content: center;
   .header_logo {
     margin-right: 0;
   }
-  .header_contact  {
+  .header_contact {
     margin-right: 0;
-    width: 100%; 
-  font-size: 17px;
+    width: 100%;
+    font-size: 17px;
   }
   .header_info_content {
-    margin-right: 20vw ;
+    margin-right: 20vw;
     margin-left: 15vw;
   }
   .home {
@@ -2226,7 +2248,7 @@ justify-content: center;
   }
   .home_title {
     text-align: center;
-    margin-bottom: 30px
+    margin-bottom: 30px;
   }
   .home_table_area {
     max-width: 350px;
@@ -2247,9 +2269,9 @@ justify-content: center;
     padding: 0;
   }
   .btn_block .btn_area {
-    background: #FFFCED ;
+    background: #fffced;
     position: absolute;
-    top: 8  0px;
+    top: 8 0px;
     right: 0;
     z-index: 2;
     display: flex;
@@ -2260,7 +2282,7 @@ justify-content: center;
     padding: 0;
     margin-right: 0;
   }
-   .section_btn {
+  .section_btn {
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 600;
@@ -2271,15 +2293,15 @@ justify-content: center;
     width: 100%;
     box-sizing: border-box;
     color: #404040;
-    background: #FFFFFF;
-border: 1px solid rgba(45, 135, 92, 0.39);
-box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
-border-radius: 34px;
+    background: #ffffff;
+    border: 1px solid rgba(45, 135, 92, 0.39);
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
     cursor: pointer;
     margin-bottom: 20px;
     margin-right: 0;
     display: flex;
-  justify-content: center;
+    justify-content: center;
   }
   .burger_menu {
     display: block;
@@ -2292,9 +2314,9 @@ border-radius: 34px;
     align-items: center;
   }
   .duties {
-    padding: 490px 0 91px 0;
-    background:  #FFFCED;
-  }   
+    padding: 30px 0 91px 0;
+    background: #fffced;
+  }
   .duty_page_title {
     margin-left: 70px;
     max-width: 560px;
@@ -2309,7 +2331,7 @@ border-radius: 34px;
   }
   .form_left_content {
     display: none;
-  }               
+  }
   .form_content {
     background: #ffffff;
     border: 1px solid rgba(45, 135, 92, 0.39);
@@ -2326,155 +2348,155 @@ border-radius: 34px;
     z-index: 1;
     opacity: 0;
     transform: translate(0px, -60%);
-  }           
+  }
   .form_right_content {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .form_subtitle {
     text-align: center;
     max-width: 500px;
-     margin-bottom: 5px;
+    margin-bottom: 5px;
   }
   .form_logo {
     margin-bottom: 20px;
-  }  
+  }
   .form_input {
     width: 369px;
-}
-.form_commit {
-  text-align: center;
-  max-width: 369px;
-}
-.work_form_left_content {
-  display: none;
-}
+  }
+  .form_commit {
+    text-align: center;
+    max-width: 369px;
+  }
+  .work_form_left_content {
+    display: none;
+  }
 
-.popup_close4,.popup_close3  {
-  position: relative;
-  bottom: 215px;
+  .popup_close4,
+  .popup_close3 {
+    position: relative;
+    bottom: 215px;
+  }
+  .popup_close5 {
+    position: relative;
+    bottom: 75px;
+    left: 240px;
+  }
+  .popup_close7 {
+    position: relative;
+    bottom: 100px;
+    left: 30px;
+  }
+  .final_form_illustration {
+    display: none;
+  }
+  .final_form_content {
+    background: #ffffff;
+    border: 1px solid rgba(45, 135, 92, 0.39);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+    color: #000;
+    box-sizing: border-box;
+    max-width: 420px;
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+    padding: 85px 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(0px, -60%);
+  }
+  .final_form_title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 154.2%;
+    max-width: 285px;
+    text-align: center;
+    color: #404040;
+  }
+  .service_cost {
+    font-size: 16px;
+  }
+  .service_cost2 {
+    font-size: 16px;
+  }
+  .service_time {
+    font-size: 17px;
+  }
+  .about_service_title_block {
+    padding: 17px 40px 24px 40px;
+  }
+  .about_service_white_block {
+    padding: 15px 120px 15px 90px;
+  }
+  .about_service_yellow_block {
+    padding: 17px 120px 24px 90px;
+  }
 
-}
-.popup_close5 {
-  position: relative;
-  bottom: 75px;
-  left: 240px;
-}
-.popup_close7 {
-  position: relative;
-  bottom: 100px;
-  left: 30px;
-}
-.final_form_illustration {
- display: none;
-}
-.final_form_content {
-  background: #FFFFFF;
-  border: 1px solid rgba(45, 135, 92, 0.39);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.17);
-  border-radius: 10px;
-  color: #000;
-  box-sizing: border-box;
-  max-width: 420px;
-  width: 100%;
-  height: 100%;
-  max-height: 280px;
-  padding: 85px 67px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease 0s;
-  z-index: 1;
-  opacity: 0;
-  transform: translate(0px, -60%);
-}
-.final_form_title {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 154.2%;
-  max-width: 285px;
-  text-align: center;
-  color: #404040;
-}
-.service_cost {
-  font-size: 16px;
-}
-.service_cost2 {
-  font-size: 16px;
-}
-.service_time {
-  font-size: 17px;
-}
-.about_service_title_block {
-  padding: 17px 40px 24px 40px;
-}
-.about_service_white_block {
-  padding: 15px 120px 15px 90px;
-}
-.about_service_yellow_block {
-  padding: 17px 120px 24px 90px;
-}
-
-.info_price_popup_text {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 165.9%;
-  color: #4f4e4e;
-  margin-bottom: 46px;
-  margin-right: 0px;
-  margin-top: 30px;
-  max-width: 450px;
-}
-.info_price_popup_text2 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 165.9%;
-  color: #4f4e4e;
-  max-width: 535px;
-  margin-bottom: 46px;
-  margin-right: 0px;
-  margin-top: 30px;
-}
-.info_price_title {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 100.9%;
-  color: #404040;
-  margin-bottom: 20px;
-  margin-top: 41px;
-  max-width: 535px;
-  margin-right: 0px;
-  text-align: center;
-}
-.info_price_title2 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 100.9%;
-  color: #404040;
-  margin-bottom: 20px;
-  margin-top: 41px;
-  max-width: 535px;
-  margin-right: 10px;
- text-align: center;
-}
-.popup_close {
-  position: relative;
-  left: 15px;
-}
-.popup_text {
-  margin-right: 0px;
-}
+  .info_price_popup_text {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 165.9%;
+    color: #4f4e4e;
+    margin-bottom: 46px;
+    margin-right: 0px;
+    margin-top: 30px;
+    max-width: 450px;
+  }
+  .info_price_popup_text2 {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 165.9%;
+    color: #4f4e4e;
+    max-width: 535px;
+    margin-bottom: 46px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .info_price_title {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100.9%;
+    color: #404040;
+    margin-bottom: 20px;
+    margin-top: 41px;
+    max-width: 535px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  .info_price_title2 {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100.9%;
+    color: #404040;
+    margin-bottom: 20px;
+    margin-top: 41px;
+    max-width: 535px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .popup_close {
+    position: relative;
+    left: 15px;
+  }
+  .popup_text {
+    margin-right: 0px;
+  }
 }
 
 /* !ДЬЮТИ БЛОК ПО ОДНОМУ ОБЬЕКЬУ НА ФРАКЦИЮ + МАСШТАБИРУЮ  */
@@ -2500,7 +2522,7 @@ border-radius: 34px;
     margin-right: 0;
   }
   .footer_contact {
-  text-align: center;
+    text-align: center;
   }
   .footer_adres_block1 {
     margin-bottom: 30px;
@@ -2513,7 +2535,7 @@ border-radius: 34px;
     text-align: center;
   }
   .footer_main_contact2 {
-   text-align: center;
+    text-align: center;
   }
   .footer_adres_block1 {
     text-align: center;
@@ -2576,7 +2598,7 @@ border-radius: 34px;
   }
   .home_table,
   .home_table2 {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
@@ -2593,8 +2615,8 @@ border-radius: 34px;
     margin: 0;
   }
   .footer_main_contact1 {
-   font-size: 25px;
-   text-align: center;
+    font-size: 25px;
+    text-align: center;
   }
   .footer_contact_block {
     display: flex;
@@ -2606,16 +2628,16 @@ border-radius: 34px;
     bottom: 75px;
     left: 215px;
   }
-   .accordion_title {
+  .accordion_title {
     max-width: 350px;
   }
- .question_block_img {
-  margin-left: 30px;
- }
+  .question_block_img {
+    margin-left: 30px;
+  }
 
-.popup_close3 {
-  bottom: 230px;
-}
+  .popup_close3 {
+    bottom: 230px;
+  }
 }
 
 /* !МАСШТАБИРУЮ АККОРДЕОН (ОПЯТЬ?) */
@@ -2691,12 +2713,11 @@ border-radius: 34px;
     height: auto;
   }
   .accordion_text {
-    width: auto ;
+    width: auto;
   }
   .popup_close5 {
     position: relative;
     bottom: 100px;
-
   }
 }
 
@@ -2706,7 +2727,7 @@ border-radius: 34px;
 
 /* !МАСШТАБИРУЮ ПОПАП ПРАЙС И ПОПАП БОДИ (ТЕЛО ДЛЯ ВСЕХ ПОПАПОВ)*/
 
-@media screen and (max-width: 550px) { 
+@media screen and (max-width: 550px) {
   .popup_close5 {
     position: relative;
     bottom: 100px;
@@ -2719,12 +2740,12 @@ border-radius: 34px;
     margin-left: 40px;
   }
   .home_title {
-   font-size: 40px;
-   text-align: center;
-   margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
   }
   .price_page_title {
-   font-size: 40px;
+    font-size: 40px;
     margin-bottom: 60px;
   }
   .duty_page_title {
@@ -2735,7 +2756,7 @@ border-radius: 34px;
     text-align: center;
   }
   .pop_question_title {
-   font-size: 40px;
+    font-size: 40px;
     margin-bottom: 50px;
   }
   .info_price_popup_text {
@@ -2786,7 +2807,7 @@ border-radius: 34px;
     margin-top: 41px;
     max-width: 535px;
     margin-right: 10px;
-   text-align: center;
+    text-align: center;
   }
   .popup_body {
     min-height: 100%;
@@ -2803,7 +2824,7 @@ border-radius: 34px;
 
 /* !МАСШТАБИРУЮ БЭКГРАУНД ИЛЛЮСТРАЦИИ У КАЖДОЙ СЕКЦИИ ОТДЕЛЬНО */
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   .footer {
     padding: 58px 30px 0 30px;
   }
@@ -2841,7 +2862,7 @@ border-radius: 34px;
   .footer_contacts {
     display: none;
   }
-  .footer_mobile_socials_side{
+  .footer_mobile_socials_side {
     display: flex;
     margin-bottom: 29px;
   }
@@ -2858,66 +2879,66 @@ border-radius: 34px;
     margin-bottom: 60px;
   }
   .duties {
-    padding: 370px 0 45px 0;
-    background:  #FFFCED;
-  }   
+    padding: 30px 0 45px 0;
+    background: #fffced;
+  }
   .duties_block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
     row-gap: 20px;
   }
-  .duty_card, .duty_card1  {
+  .duty_card,
+  .duty_card1 {
     width: 100%;
     max-width: 154px;
     height: 184px;
     padding: 20px 20px;
   }
 
-   .duty_main_img {
+  .duty_main_img {
     width: 100%;
     max-width: 80px;
     margin-left: 15px;
-   }
-   .duty_main_img2 {
+  }
+  .duty_main_img2 {
     width: 100%;
     max-width: 94px;
-   }
-   .duty_main_img3 {
+  }
+  .duty_main_img3 {
     width: 100%;
     max-width: 72px;
-   }
-   .duty_main_img4 {
+  }
+  .duty_main_img4 {
     width: 100%;
     max-width: 88px;
-   }
-   .duty_main_img5 {
+  }
+  .duty_main_img5 {
     width: 100%;
     max-width: 103px;
-   }
-   .duty_main_img6 {
+  }
+  .duty_main_img6 {
     width: 100%;
     max-width: 109px;
-   }
-   .duty_main_img7 {
+  }
+  .duty_main_img7 {
     width: 100%;
     max-width: 111px;
-   }
-   .duty_main_img8 {
+  }
+  .duty_main_img8 {
     width: 100%;
     max-width: 82px;
-   }
-   .duty_main_img9 {
+  }
+  .duty_main_img9 {
     width: 100%;
     max-width: 85px;
-   }
-   .duty_main_img10 {
+  }
+  .duty_main_img10 {
     width: 100%;
     max-width: 114px;
-   }
+  }
 
-
-   .duty_img1 {
+  .duty_img1 {
     width: 100%;
     max-width: 145px;
     margin-bottom: 5px;
@@ -2953,9 +2974,10 @@ border-radius: 34px;
   .duty_img10 {
     margin-bottom: 22px;
   }
-   .duty_card_title, .duty_card_title1  {
+  .duty_card_title,
+  .duty_card_title1 {
     font-size: 18px;
-  } 
+  }
 }
 
 /* !ОПЯТЬ МАСШТАБИРУЮ ХЭДЕР И У ЛОГО МЕНЯЮ ЦВЕТ ОТНОСИТЕЛЬНО ДИЗАЙНА   */
@@ -2967,10 +2989,10 @@ border-radius: 34px;
 /* !МАСШТАБИРУЮ ПОПАП ПРАЙС  + МАСШТАБИРУЮ ПОПАП ФОРМУ ОТПРАВКИ */
 
 @media screen and (max-width: 450px) {
-   .header_contact  {
+  .header_contact {
     font-size: 20px;
-   }
-   .header_info_content {
+  }
+  .header_info_content {
     display: flex;
     align-items: center;
     margin-right: 40px;
@@ -2978,11 +3000,11 @@ border-radius: 34px;
   }
   .header_logo {
     font-size: 20px;
-    color: #48E499;
+    color: #48e499;
     text-align: center;
     max-width: 100px;
   }
-  .mobile_socials_section {   
+  .mobile_socials_section {
     padding: 23px 20px;
   }
   .mobile_social_sub {
@@ -3074,7 +3096,7 @@ border-radius: 34px;
     padding: 6px 0px 5px 18px;
     box-sizing: border-box;
     margin: 0;
-  } 
+  }
   .home {
     padding: 0 5px;
   }
@@ -3088,123 +3110,118 @@ border-radius: 34px;
     text-align: start;
     margin-bottom: 40px;
     margin-left: 20px;
-   }
-   .pop_question_title {
+  }
+  .pop_question_title {
     font-size: 36px;
-   }
-   .duty_page_title {
+  }
+  .duty_page_title {
     font-size: 36px;
-
   }
   .price_page_title {
     font-size: 36px;
   }
-   .form_content {
+  .form_content {
     width: 340px;
-   }
-   .form_input {
+  }
+  .form_input {
     width: 270px;
+  }
+  .popup_close3 {
+    bottom: 250px;
+  }
+  .popup_text {
+    font-size: 15px;
+  }
+  .card_popup_btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
 }
-.popup_close3 {
-  bottom: 250px;
-}
-.popup_text {
-  font-size: 15px;
-}
-.card_popup_btn {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-}
-}
-
 
 /* !МАСШТАБИРУЮ ПРАЙС ПОПАП И ДЬЮТИ ПОПАП  */
 
-
 @media screen and (max-width: 400px) {
-  
   .info_price_content {
     padding: 40px 30px 63px 35px;
   }
   .info_price_content2 {
-
     padding: 40px 30px 63px 35px;
-}
-.card_popup_btn {
-  width: 80%;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  white-space:nowrap;
-}
-.popup_content {
-  background: #ffffff;
-  border: 1px solid rgba(45, 135, 92, 0.39);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.17);
-  border-radius: 10px;
-  color: #000;
-  width: 100%;
-  max-width: 800px;
-  padding: 10px 36px 43px 36px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease 0s;
-  z-index: 1;
-  opacity: 0;
-  transform: translate(0px, -60%);
-}
-.popup_close {
-  position: relative;
-  top: 15px;
-  left: 15px;
-}
-.info_price_popup_text2 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 165.9%;
-  color: #4f4e4e;
-  max-width: 1000px;
-  margin-bottom: 46px;
-  margin-right: 0px;
-  margin-top: 30px;
-}
-.info_price_title {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 100.9%;
-  color: #404040;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  max-width: 535px;
-  margin-right: 100px;
-}
-.info_price_title2 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 100.9%;
-  color: #404040;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  max-width: 535px;
-  margin-right: 10px;
-}
-.popup_close8 {
-  bottom: 300px;
-}
-.popup_close2 {
-  position: relative;
-  top: 10px;
-  left: 10px;
-}
+  }
+  .card_popup_btn {
+    width: 80%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  .popup_content {
+    background: #ffffff;
+    border: 1px solid rgba(45, 135, 92, 0.39);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+    color: #000;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px 36px 43px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(0px, -60%);
+  }
+  .popup_close {
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+  .info_price_popup_text2 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 165.9%;
+    color: #4f4e4e;
+    max-width: 1000px;
+    margin-bottom: 46px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .info_price_title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100.9%;
+    color: #404040;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 535px;
+    margin-right: 100px;
+  }
+  .info_price_title2 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100.9%;
+    color: #404040;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 535px;
+    margin-right: 10px;
+  }
+  .popup_close8 {
+    bottom: 300px;
+  }
+  .popup_close2 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 /* !МАСШТАБИРУЮ ХЭДЕР */
@@ -3215,22 +3232,21 @@ border-radius: 34px;
 
 /* !МАСШТАБИРУЮ ПОПАП ФОРМУ ОТПРАВКИ */
 
-
 @media screen and (max-width: 360px) {
-  
   .header {
     padding: 20px 10px 15px 0;
   }
-  .header_contact  {
+  .header_contact {
     font-size: 20px;
-   }
-   .header_info_content {
+  }
+  .header_info_content {
     display: flex;
     align-items: center;
     margin-right: 20px;
     margin-left: 10px;
   }
-  .home_btn1, .home_btn2 {
+  .home_btn1,
+  .home_btn2 {
     width: 100%;
     min-width: 270px;
     max-width: 312px;
@@ -3249,7 +3265,7 @@ border-radius: 34px;
   }
   .pop_question_title {
     margin-bottom: 20px;
-   }
+  }
   .accordion_title {
     font-family: "Gilroy";
     font-style: normal;
@@ -3260,7 +3276,7 @@ border-radius: 34px;
   }
   .accordion_text {
     font-size: 16px;
-    width: auto ;
+    width: auto;
   }
   .accordion .accordion_main_content .accordion_label {
     position: relative;
@@ -3313,36 +3329,49 @@ border-radius: 34px;
     width: 100%;
     max-width: 340px;
     display: flex;
-   }
-   .form_right_content {
+  }
+  .form_right_content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 0px;
-   }
-   .form_subtitle {
+  }
+  .form_subtitle {
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
+  }
+  .final_form_content {
+    padding: 85px 20px;
+  }
+  .popup_close7 {
+    position: relative;
+    bottom: 110px;
+    left: 0;
+  }
+  .popup_close3 {
+    bottom: 240px;
+    left: 0;
+  }
+  .form_commit {
+    font-size: 13px;
+  }
 }
-.final_form_content {
-  padding: 85px 20px;
-}
-.popup_close7 {
-  position: relative;
-  bottom: 110px;
-  left: 0;
-}
-.popup_close3 {
-  bottom: 240px;
- left: 0;
-}
-.form_commit {
- font-size: 13px;
-}
-}
+
+/* !МАСШТАБИРУЮ НАДПИСЬ НА ХЭДЕРЕ */
+
+ @media screen and (max-width:330px) {
+  .header_info_content {
+      margin-right: 15px;
+      margin-left: 5px;
+  }
+  .header_contact {
+    font-size: 16px;
+  }
+ }
+
 
 /* !МАСШТАБИРУЮ КАРТОЧКИ + УМЕНЬШАЮ КОЛУМН ГЕП */
 
@@ -3350,11 +3379,16 @@ border-radius: 34px;
 
 /* !МАСШТАБИРУЮ АККОРДЕОН */
 
-@media screen and (max-width:300px) {
+@media screen and (max-width: 300px) {
   .duties_block {
     column-gap: 10px;
   }
-  .duty_card, .duty_card1  {
+  .header_info_content {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+  .duty_card,
+  .duty_card1 {
     width: 100%;
     max-width: 130px;
     height: 170px;
@@ -3367,19 +3401,19 @@ border-radius: 34px;
   }
   .form_right_content {
     margin-left: 0;
-   }
-   .form_input {
+  }
+  .form_input {
     width: 100%;
     max-width: 230px;
-   }
-   .form_btn {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 240px;
-  display: flex;
-  justify-content: center;
   }
-   .mobile_social_link {
+  .form_btn {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 240px;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile_social_link {
     margin-right: 20px;
   }
   .about_service_white_block {
@@ -3422,6 +3456,9 @@ border-radius: 34px;
   }
   .popup_close3 {
     bottom: 240px;
-   right: 1200px;
+    right: 1200px;
   }
 }
+
+
+
