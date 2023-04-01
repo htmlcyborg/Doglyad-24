@@ -2507,7 +2507,7 @@ body {
 
 /* !ДЬЮТИ БЛОК ПО ОДНОМУ ОБЬЕКЬУ НА ФРАКЦИЮ + МАСШТАБИРУЮ  */
 
-/* !ВСЕ ОБЬЕКТЫ ФУТЕРА КРОМЕ ФОРМЫ В КОЛОНКУ + МАСШТАБИРУЮ (ХАПАЮ+БУХАЮ = КСГО */
+/* !ВСЕ ОБЬЕКТЫ ФУТЕРА КРОМЕ ФОРМЫ В КОЛОНКУ + МАСШТАБИРУЮ  */
 
 @media screen and (max-width: 700px) {
   .duties_block {
@@ -2826,7 +2826,7 @@ body {
 
 /* !МАСШТАБИРУЮ ФУТЕР ОТНОСИТЕЛЬНО ДИЗАЙНА И УБИРАЮ ФОРМУ ОТПРАВКИ */
 
-/* !КАРТОЧКИ ДЬЮТИС СТАВЛЮ ПО ДВА ОБЬЕКТА В ФРАКЦИЮ + МАСШТАБИРУЮ ОТДЕЛЬНО КАЖДУЮ ЕБАНУЮ ФОТКУ НЕНАВИЖУ НТМЛ */
+/* !КАРТОЧКИ ДЬЮТИС СТАВЛЮ ПО ДВА ОБЬЕКТА В ФРАКЦИЮ + МАСШТАБИРУЮ ОТДЕЛЬНО КАЖДОЕ ФОТО */
 
 /* !МАСШТАБИРУЮ БЭКГРАУНД ИЛЛЮСТРАЦИИ У КАЖДОЙ СЕКЦИИ ОТДЕЛЬНО */
 
@@ -3329,7 +3329,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 60px 43px 60px;
+    padding: 0 20px 43px 20px;
   }
   .form_content {
     width: 100%;
@@ -3366,7 +3366,7 @@ body {
   }
 }
 
-/* !МАСШТАБИРУЮ НАДПИСЬ НА ХЭДЕРЕ */
+/* !МАСШТАБИРУЮ НАДПИСЬ НА ХЭДЕРЕ + ПОПАП ПАДИНГ + ТЕКСТ ХОУМ ТЕЙБЛ */
 
  @media screen and (max-width:330px) {
   .header_info_content {
@@ -3374,6 +3374,19 @@ body {
       margin-left: 5px;
   }
   .header_contact {
+    font-size: 16px;
+  }
+  .popup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px 43px 2px;
+  }
+  .home_table_text {
+    font-size: 15px;
+  }
+  .home_table_text2 {
     font-size: 16px;
   }
  }
