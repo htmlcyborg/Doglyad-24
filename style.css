@@ -437,6 +437,10 @@ body {
   cursor: pointer;
   margin-right: 33px;
 }
+.home_btn1:hover {
+  background: #EB2121;
+ transition: 0.3s;
+}
 .home_btn2 {
   padding: 18px 10px;
   box-sizing: border-box;
@@ -450,6 +454,10 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.home_btn2:hover  {
+  background: #10B867;
+  transition: 0.3s;
 }
 .home_illustration {
   width: 100%;
@@ -1063,6 +1071,10 @@ body {
   cursor: pointer;
   margin-right: 27px;
 }
+.footer_btn:hover {
+  background: #EB2121;
+ transition: 0.3s;
+}
 .footer_form_content_sub {
   font-family: "Gilroy-Light", sans-serif;
   font-style: normal;
@@ -1265,6 +1277,10 @@ body {
   border: none;
   cursor: pointer;
 }
+.form_btn:hover {
+  background: #EB2121;
+ transition: 0.3s;
+}
 .form_commit {
   font-family: "Gilroy-Light", sans-serif;
   font-style: normal;
@@ -1286,6 +1302,10 @@ body {
   padding: 14px 95px;
   border: none;
   cursor: pointer;
+}
+.work_form_btn:hover {
+  background: #10B867;
+  transition: 0.3s;
 }
 .popup_close3 {
   position: relative;
@@ -1666,6 +1686,11 @@ body {
   box-sizing: border-box;
   width: 208px;
 }
+.about_serivce_popup_btn:hover  {
+  background: #EB2121;
+  transition: 0.3s; 
+}
+
 .popup_close5 {
   position: relative;
   bottom: 75px;
@@ -1750,6 +1775,10 @@ body {
   line-height: 19px;
   color: #ffffff;
   cursor: pointer;
+}
+.card_popup_btn:hover {
+  background: #EB2121;
+ transition: 0.3s;
 }
 .popup_top_content {
   display: flex;
