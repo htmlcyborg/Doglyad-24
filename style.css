@@ -1997,7 +1997,7 @@ body {
     margin-bottom: 50px;
   }
   .duties {
-    padding: 30px 0 126px 0;
+    padding: 50px 0 126px 0;
     background: #f5f5f5;
   }
   .footer_form_content {
@@ -2586,6 +2586,9 @@ body {
   .popup_text {
     margin-right: 0px;
   }
+  .popup_close4 {
+    right: 10px;
+  }
 }
 
 /* !МЕНЯЮ ХОУМТЕЙБЛ ПО ВИДУ + МАСШТАБИРУЮ С КНОПКАМИ ОТНОСИТЕЛЬНО ДИЗАЙНА */
@@ -2753,6 +2756,10 @@ body {
   .popup_close5 {
     position: relative;
     bottom: 100px;
+  }
+  .popup_close4 {
+    right: 10px;
+    bottom: 230px;
   }
 }
 
@@ -3013,6 +3020,12 @@ body {
   .duty_card_title1 {
     font-size: 18px;
   }
+  .card_popup_btn {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+  }                         
 }
 
 /* !ОПЯТЬ МАСШТАБИРУЮ ХЭДЕР И У ЛОГО МЕНЯЮ ЦВЕТ ОТНОСИТЕЛЬНО ДИЗАЙНА   */
@@ -3140,6 +3153,13 @@ body {
     bottom: 110px;
     left: 150px;
   }
+  .popup_close4 {
+    right: 10px;
+    bottom: 260px;
+  }
+  .popup_close3 {
+    bottom: 250px;
+  }
   .home_title {
     font-size: 36px;
     text-align: start;
@@ -3161,9 +3181,7 @@ body {
   .form_input {
     width: 270px;
   }
-  .popup_close3 {
-    bottom: 250px;
-  }
+ 
   .popup_text {
     font-size: 15px;
   }
@@ -3352,6 +3370,9 @@ body {
   }
   .service_cost {
     max-width: 100px;
+  }
+  .popup_close4 {
+    bottom: 230px;
   }
   .popup_body {
     min-height: 100%;
