@@ -282,7 +282,7 @@ body {
   margin-right: 0;
 }
 .mobile_social_sub {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -411,7 +411,7 @@ body {
 }
 .home_btn1,
 .home_btn2 {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -572,9 +572,9 @@ body {
   margin-bottom: 5px;
 }
 .price_card_subtitle {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 19px;
   line-height: 23px;
   text-align: center;
@@ -933,9 +933,9 @@ body {
 }
 
 .accordion_text {
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.8vh;
   line-height: 2.9vh;
   color: #4f4e4e;
@@ -943,9 +943,9 @@ body {
   word-wrap: break-word;
 }
 .accordion_list {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Redium", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 17px;
   line-height: 165.9%;
   color: #4f4e4e;
@@ -1265,9 +1265,9 @@ body {
   margin-bottom: 31px;
 }
 .form_btn {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Medium", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 17px;
   line-height: 142.2%;
   color: #ffffff;
@@ -1291,9 +1291,9 @@ body {
   margin-top: 26px;
 }
 .work_form_btn {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Medium", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 17px;
   line-height: 142.2%;
   color: #ffffff;
@@ -1451,7 +1451,7 @@ body {
   transform: translate(0px, -60%);
 }
 .info_price_title {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -1463,7 +1463,7 @@ body {
   margin-right: 100px;
 }
 .info_price_title2 {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -1475,9 +1475,9 @@ body {
   margin-right: 50px;
 }
 .info_price_popup_text {
-  font-family: "Gilroy";
+  font-family:"Gilroy-Regular", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 165.9%;
   color: #4f4e4e;
@@ -1502,9 +1502,9 @@ body {
   padding: 13px 43px;
   background: #a60b0b;
   border-radius: 34px;
-  font-family: "Gilroy";
+  font-family:"Gilroy-Medium", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 17px;
   line-height: 100.9%;
   color: #ffffff;
@@ -1675,9 +1675,9 @@ body {
   padding: 13px 43px;
   background: #a60b0b;
   border-radius: 34px;
-  font-family: "Gilroy";
+  font-family:"Gilroy-Medium", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 17px;
   line-height: 100.9%;
   color: #ffffff;
@@ -1837,7 +1837,7 @@ body {
     margin-right: 26px;
   }
   .header_time_sub {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Regular", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -1850,7 +1850,7 @@ body {
     margin-right: 60px;
   }
   .header_logo {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 27px;
@@ -1895,7 +1895,7 @@ body {
     margin-right: 26px;
   }
   .header_time_sub {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Regular", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -1908,7 +1908,7 @@ body {
     margin-right: 40px;
   }
   .header_logo {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 27px;
@@ -2032,9 +2032,9 @@ body {
     margin-right: 20px;
   }
   .header_contact {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Regular", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 21px;
     line-height: 22px;
     color: #ffffff;
@@ -2065,9 +2065,9 @@ body {
     flex-direction: column;
   }
   .footer_form_content_sub {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Regular", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 13px;
     line-height: 115.2%;
     color: #ffffff;
@@ -2078,9 +2078,9 @@ body {
     border-radius: 34px;
     padding: 14px 60px;
     border: none;
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 17px;
     line-height: 142.2%;
     color: #ffffff;
@@ -2102,7 +2102,7 @@ body {
     flex-direction: column;
   }
   .footer_form_content_title {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -2145,7 +2145,7 @@ body {
     font-size: 25px;
   }
   .accordion_title {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -2318,7 +2318,7 @@ body {
     margin-right: 0;
   }
   .section_btn {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
@@ -2447,7 +2447,7 @@ body {
     transform: translate(0px, -60%);
   }
   .final_form_title {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 21px;
@@ -2576,9 +2576,9 @@ body {
     text-align: center;
   }
   .footer_main_adres {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Regular", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 21px;
     line-height: 113.9%;
     color: #ffffff;
@@ -2723,7 +2723,7 @@ body {
     max-width: 800px;
   }
   .accordion_title {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 19px;
@@ -2802,7 +2802,7 @@ body {
     margin-bottom: 50px;
   }
   .info_price_popup_text {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -2814,7 +2814,7 @@ body {
     max-width: 450px;
   }
   .info_price_popup_text2 {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -2826,7 +2826,7 @@ body {
     margin-top: 30px;
   }
   .info_price_title {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 27px;
@@ -2839,7 +2839,7 @@ body {
     text-align: center;
   }
   .info_price_title2 {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 27px;
@@ -3232,7 +3232,7 @@ body {
     left: 15px;
   }
   .info_price_popup_text2 {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -3244,7 +3244,7 @@ body {
     margin-top: 30px;
   }
   .info_price_title {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -3256,7 +3256,7 @@ body {
     margin-right: 100px;
   }
   .info_price_title2 {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -3320,7 +3320,7 @@ body {
     margin-bottom: 20px;
   }
   .accordion_title {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
@@ -3394,9 +3394,9 @@ body {
     margin-left: 0px;
   }
   .form_subtitle {
-    font-family: "Gilroy";
+    font-family:"Gilroy-Regular", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
   }
   .final_form_content {
