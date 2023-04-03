@@ -936,17 +936,18 @@ body {
   font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.8vh;
+  font-size: 16px;
   line-height: 2.9vh;
   color: #4f4e4e;
   width: auto;
   word-wrap: break-word;
 }
-.accordion_list {
-  font-family:"Gilroy-Redium", sans-serif;
+
+.accordion_list_item {
+  font-family:"Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 165.9%;
   color: #4f4e4e;
   max-width: 676px;
@@ -1140,6 +1141,40 @@ body {
   color: #ffffff;
 }
 
+/* *FOOTER_BTN_SECTION */
+
+.footer_section_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.footer_button_section_area {
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  column-gap: 50px; 
+  row-gap: 30px;
+}
+.footer_section_btn {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 11px 29px;
+  display: flex;
+  justify-content: center;
+  color: #404040;
+  border: 3px solid #2c8359;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+  background: #eff2e0;
+  cursor: pointer;
+  height: 47px;
+  box-sizing: border-box;
+  width: 160px;
+}
+
 /* *FORM_POPUP */
 
 .form_popup {
@@ -1307,10 +1342,6 @@ body {
   background: #10B867;
   transition: 0.3s;
 }
-.popup_close3 {
-  position: relative;
-  bottom: 230px;
-}
 .popup_close4 {
   position: relative;
   bottom: 240px;
@@ -1432,6 +1463,7 @@ body {
   z-index: 1;
   opacity: 0;
   transform: translate(0px, -60%);
+  width: 100%;
 }
 .info_price_content2 {
   background: #ffffff;
@@ -1449,6 +1481,7 @@ body {
   z-index: 1;
   opacity: 0;
   transform: translate(0px, -60%);
+  width: 100%;
 }
 .info_price_title {
   font-family:"Gilroy-Medium", sans-serif;
@@ -2048,7 +2081,7 @@ body {
     max-width: 340px;
   }
   .popular_question {
-    height: 860px;
+    height: 800px;
     background: url(./img/Group\ 146.png);
     background-color: #eff2e0;
     background-position: center;
@@ -2229,10 +2262,6 @@ body {
     margin-left: 25px;
     margin-right: 30px;
   }
-  .popup_close3 {
-    position: relative;
-    bottom: 250px;
-  }
 }
 
 /* !УБИРАЮ ИЛЛЮСТРАЦИЮ С ХЭДЕРА, ДОБАВЛЯЮ БУРГЕР И ПЕРЕНОШУ СОЦИАЛКИ ВНИЗ ОТНОСИТЕЛЬНО ДИЗАЙНА*/
@@ -2338,6 +2367,25 @@ body {
     display: flex;
     justify-content: center;
   }
+  .footer_section_btn {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 11px 29px;
+    display: flex;
+    justify-content: center;
+    color: #404040;
+    background: #ffffff;
+    border: 1px solid rgba(45, 135, 92, 0.39);
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
+    cursor: pointer;
+    height: 47px;
+    box-sizing: border-box;
+    width: 160px;
+  }
   .burger_menu {
     display: block;
   }
@@ -2408,8 +2456,7 @@ body {
     display: none;
   }
 
-  .popup_close4,
-  .popup_close3 {
+  .popup_close4 {
     position: relative;
     bottom: 215px;
   }
@@ -2527,7 +2574,7 @@ body {
   }
   .popup_close {
     position: relative;
-    left: 15px;
+    left: 55px;
   }
   .popup_text {
     margin-right: 0px;
@@ -2561,6 +2608,9 @@ body {
   }
   .footer_adres_block1 {
     margin-bottom: 30px;
+  }
+  .footer_contact_block {
+    text-align: center;
   }
   .footer_socials_block {
     display: flex;
@@ -2672,10 +2722,9 @@ body {
   .question_block_img {
     margin-left: 30px;
   }
-
-  .popup_close3 {
-    bottom: 230px;
-  }
+.popup_close {
+  left: 15px;
+}
 }
 
 /* !МАСШТАБИРУЮ АККОРДЕОН (ОПЯТЬ?) */
@@ -2705,6 +2754,19 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  .popular_question {
+    height: 750px;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    max-height: 580px;
+    width: 100%;
+    max-width: 800px;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  
   .accordion .accordion_main_content.active .accordion_label {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -2856,7 +2918,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 60px 43px 60px;
+    padding: 0 30px 43px 30px;
+  }
+  .popup_close5 {
+    left: 180px;
   }
 }
 
@@ -2886,7 +2951,9 @@ body {
     margin-bottom: 20px;
   }
   .footer_main_contact2 {
+    font-size: 23px;
     margin-bottom: 29px;
+    color: #CFF9E4;
   }
   .footer_mobile_social_icon {
     margin-right: 32px;
@@ -3026,6 +3093,9 @@ body {
     justify-content: center;
     white-space: nowrap;
   }                         
+  .popup_close5 {
+    left: 150px;
+  }
 }
 
 /* !ОПЯТЬ МАСШТАБИРУЮ ХЭДЕР И У ЛОГО МЕНЯЮ ЦВЕТ ОТНОСИТЕЛЬНО ДИЗАЙНА   */
@@ -3090,18 +3160,17 @@ body {
     background-position: center;
     background-size: 429px;
     background-repeat: no-repeat;
-    padding: 60px 0 95px 0;
+    padding: 60px 0;
   }
   .accordion {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    height: 100%;
-    max-height: 5000px;
+    height: 570px;
     width: 100%;
-    max-width: 800px;
+    max-width: 605px;
+    overflow: auto;
+    overflow-x: hidden;
   }
-
   .accordion .accordion_main_content .accordion_label {
     position: relative;
     padding: 5px 20px;
@@ -3157,9 +3226,6 @@ body {
     right: 10px;
     bottom: 260px;
   }
-  .popup_close3 {
-    bottom: 250px;
-  }
   .home_title {
     font-size: 36px;
     text-align: start;
@@ -3181,7 +3247,9 @@ body {
   .form_input {
     width: 270px;
   }
- 
+ .popup_close5 {
+  left: 130px;
+ }
   .popup_text {
     font-size: 15px;
   }
@@ -3192,9 +3260,24 @@ body {
   }
 }
 
+/* !МАСШТАБИРУЮ ХЕДЕР  */
+
+@media screen and (max-width: 420px) {
+.header_info_content {
+  margin-right: 25px;
+  margin-left: 15px;
+ } 
+}
+
 /* !МАСШТАБИРУЮ ПРАЙС ПОПАП И ДЬЮТИ ПОПАП  */
 
 @media screen and (max-width: 400px) {
+  .footer_button_section_area {
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    column-gap: 50px; 
+    row-gap: 30px;
+  }
   .info_price_content {
     padding: 40px 30px 63px 35px;
   }
@@ -3228,7 +3311,7 @@ body {
   }
   .popup_close {
     position: relative;
-    top: 15px;
+    bottom: 20px;
     left: 15px;
   }
   .info_price_popup_text2 {
@@ -3253,7 +3336,6 @@ body {
     margin-bottom: 20px;
     margin-top: 10px;
     max-width: 535px;
-    margin-right: 100px;
   }
   .info_price_title2 {
     font-family:"Gilroy-Medium", sans-serif;
@@ -3270,11 +3352,16 @@ body {
   .popup_close8 {
     bottom: 300px;
   }
+
   .popup_close2 {
     position: relative;
     top: 10px;
     left: 10px;
   }
+ .header_info_content {
+  margin-right: 20px;
+  margin-left: 10px;
+ } 
 }
 
 /* !МАСШТАБИРУЮ ХЭДЕР */
@@ -3363,6 +3450,12 @@ body {
     max-width: 800px;
     height: auto;
   }
+  .footer_main_contact1 {
+    font-size: 22px;
+  }
+  .footer_main_contact2 {
+    font-size: 20px;
+  }
   .popup_close5 {
     position: relative;
     bottom: 115px;
@@ -3407,10 +3500,6 @@ body {
     bottom: 110px;
     left: 0;
   }
-  .popup_close3 {
-    bottom: 240px;
-    left: 0;
-  }
   .form_commit {
     font-size: 13px;
   }
@@ -3439,6 +3528,9 @@ body {
   .home_table_text2 {
     font-size: 16px;
   }
+  .popup_close5 {
+    left: 130px;
+   }
  }
 
 
@@ -3449,12 +3541,23 @@ body {
 /* !МАСШТАБИРУЮ АККОРДЕОН */
 
 @media screen and (max-width: 300px) {
-  .duties_block {
-    column-gap: 10px;
-  }
   .header_info_content {
     margin-right: 5px;
     margin-left: 5px;
+}
+.mobile_socials_section {
+  display: flex;
+  padding: 23px 50px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  align-items: center;
+}
+.mobile_socials_block {
+  margin-bottom: 10px ;
+}
+.duties_block {
+  column-gap: 10px;
 }
   .duty_card,
   .duty_card1 {
@@ -3523,10 +3626,10 @@ body {
     max-width: 800px;
     height: auto;
   }
-  .popup_close3 {
-    bottom: 240px;
-    right: 1200px;
-  }
+  .popup_close5 {
+    left: 130px;
+   }
+
 }
 
 
