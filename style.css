@@ -1544,7 +1544,8 @@ body {
   border: none;
   cursor: pointer;
   box-sizing: border-box;
-  width: 208px;
+  width: 100%;
+  max-width: 208px;
 }
 .price_popup_btn:hover {
   background: #eb2121;
@@ -1717,7 +1718,8 @@ body {
   border: none;
   cursor: pointer;
   box-sizing: border-box;
-  width: 208px;
+  max-width: 208px;
+  width: 100%;
 }
 .about_serivce_popup_btn:hover  {
   background: #EB2121;
