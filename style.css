@@ -1532,7 +1532,7 @@ body {
   margin-top: 30px;
 }
 .price_popup_btn {
-  padding: 13px 43px;
+  padding: 13px 0;
   background: #a60b0b;
   border-radius: 34px;
   font-family:"Gilroy-Medium", sans-serif;
@@ -1557,6 +1557,10 @@ body {
 .popup_close1 {
   position: relative;
   bottom: 0px;
+}
+.popup_close8 {
+  position: relative;
+   left: 50px;
 }
 .about_serivce_popup {
   position: fixed;
@@ -1709,7 +1713,7 @@ body {
   color: #4f4e4e;
 }
 .about_serivce_popup_btn {
-  padding: 13px 43px;
+  padding: 13px 0;
   background: #a60b0b;
   border-radius: 34px;
   font-family:"Gilroy-Medium", sans-serif;
@@ -2198,6 +2202,10 @@ body {
     position: relative;
     bottom: 210px;
     left: 20px;
+  }
+  .popup_close8 {
+    position: relative;
+     left: 10px;
   }
 }
 
@@ -3359,7 +3367,7 @@ body {
     margin-right: 10px;
   }
   .popup_close8 {
-    bottom: 300px;
+    bottom: 10px;
   }
 
   .popup_close2 {
