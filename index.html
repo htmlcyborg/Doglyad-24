@@ -7,52 +7,59 @@
     <title>Догляд 24/7</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
-    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x16" />
   </head>
   <body>
     <!-- *HEADER  -->
-
-    <header class="header">
-      <div class="container">
-        <div class="header_wrapper">
-          <img class="header_logo" src="./img/logo.png" alt="logo">
-          <div class="header_info_content">
-            <p class="header_time_sub">Працюємо з 8.00-21.00</p>
-            <a href="tel:+38063 021 24 07" class="header_contact link">
-              +38063 021 24 07</a
-            >
-            <a href="tel:+38063 021 24 07" class="header_btn link"
-              >Зворотній зв’язок</a
-            >
+    <div class="header-wrapper-block">
+      <header class="header">
+        <div class="container">
+          <div class="header_wrapper">
+            <img class="header_logo" src="./img/logo.png" alt="logo" />
+            <div class="header_info_content">
+              <p class="header_time_sub">Працюємо з 8.00-21.00</p>
+              <a href="tel:+38063 021 24 07" class="header_contact link">
+                +38 063-02-12-407</a
+              >
+              <a href="tel:+38063 021 24 07" class="header_btn link"
+                >Зворотній зв’язок</a
+              >
+            </div>
+            <div class="header_socials">
+              <a
+                target="_blank"
+                href="https://t.me/dohlyad24_bot"
+                class="header_social_img"
+                ><img
+                  src="./img/telegram_logo_icon.png"
+                  alt="telegram"
+                  class="header_social_icon"
+              /></a>
+              <a href="viber://pa?chatURI=doglyad24" class="header_social_img">
+                <img
+                  src="./img/viber_logo_icon.png"
+                  alt="viber"
+                  class="header_social_icon"
+              /></a>
+              <a
+                target="_blank"
+                href="https://wa.me/380630212407"
+                class="header_social_img"
+                ><img
+                  src="./img/whatsapp_logo_icon.png"
+                  alt="whatsup"
+                  class="header_social_icon"
+              /></a>
+            </div>
+            <img
+              class="header_burger_icon"
+              onclick="burgerMenu()"
+              src="./img/burger_icon.svg"
+            />
           </div>
-          <div class="header_socials">
-            <a target="_blank" href="t.me/dohlyad24_bot" class="header_social_img"
-              ><img
-                src="./img/telegram_logo_icon.png"
-                alt="telegram"
-                class="header_social_icon"
-            /></a>
-            <a  href="viber://pa?chatURI=doglyad24" class="header_social_img">
-              <img
-                src="./img/viber_logo_icon.png"
-                alt="viber"
-                class="header_social_icon"
-            /></a>
-            <a target="_blank" href="https://wa.me/380630212407" class="header_social_img"
-              ><img
-                src="./img/whatsapp_logo_icon.png"
-                alt="whatsup"
-                class="header_social_icon"
-            /></a>
-          </div>
-          <img
-            class="header_burger_icon"
-            onclick="burgerMenu()"
-            src="./img/burger_icon.svg"
-          />
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
 
     <!-- ?HEADER -->
 
@@ -60,19 +67,25 @@
 
     <div class="mobile_socials_section">
       <div class="mobile_socials_block">
-        <a target="_blank" href="t.me/dohlyad24_bot" class="mobile_social_link"
+        <a
+          target="_blank"
+          href="https://t.me/dohlyad24_bot"
+          class="mobile_social_link"
           ><img
             src="./img/mobile_tg.png"
             alt="telegram_icon"
             class="mobile_social_img"
         /></a>
-        <a  href="viber://pa?chatURI=doglyad24" class="mobile_social_link"
+        <a href="viber://pa?chatURI=doglyad24" class="mobile_social_link"
           ><img
             src="./img/mobile_viber.png"
             alt="viber_icon"
             class="mobile_social_img"
         /></a>
-        <a target="_blank" href="https://wa.me/380630212407" class="mobile_social_link"
+        <a
+          target="_blank"
+          href="https://wa.me/380630212407"
+          class="mobile_social_link"
           ><img
             src="./img/mobile_wu.png"
             alt="whatsup_icon"
@@ -103,7 +116,7 @@
       <div class="container">
         <div class="home_content">
           <div class="main_home_content">
-            <h1 class="home_title">Агенція з підбору доглядальниць</h1>
+            <h1 class="home_title">Агенція з підбору доглядальниць у Києві</h1>
             <div class="home_table_area">
               <div class="home_table">
                 <img
@@ -162,7 +175,7 @@
 
     <section id="price_page" class="price_page">
       <div class="container">
-        <h1 class="price_page_title">Вартість послуг доглядальниці</h1>
+        <h1 class="price_page_title">Вартість послуг доглядальниці у Києві</h1>
         <div class="price_page_content">
           <div class="price_card">
             <h2 class="price_card_title">Доглядальниця погодинно</h2>
@@ -227,7 +240,9 @@
                   class="duty_main_img"
                 />
               </a>
-              <a href="#duty_popup" class="duty_card_title link">Дотримання гігієни</a>
+              <a href="#duty_popup" class="duty_card_title link"
+                >Дотримання гігієни</a
+              >
             </div>
             <div class="duty_card">
               <a href="#duty_popup2" class="duty_img2"
@@ -236,7 +251,9 @@
                   alt="ija"
                   class="duty_main_img2"
               /></a>
-              <a href="#duty_popup2" class="duty_card_title link">Приготування їжі</a>
+              <a href="#duty_popup2" class="duty_card_title link"
+                >Приготування їжі</a
+              >
             </div>
             <div class="duty_card">
               <a href="#duty_popup3" class="duty_img3"
@@ -246,7 +263,9 @@
                   alt="magazin"
                   class="duty_main_img"
               /></a>
-              <a href="#duty_popup3" class="duty_card_title link">Похід до магазину</a>
+              <a href="#duty_popup3" class="duty_card_title link"
+                >Похід до магазину</a
+              >
             </div>
             <div class="duty_card">
               <a href="#duty_popup4" class="duty_img4">
@@ -255,7 +274,9 @@
                   alt="profilaktika"
                   class="duty_main_img4"
               /></a>
-              <a href="#duty_popup4" class="duty_card_title link" >Профілактика пролежнів</a>
+              <a href="#duty_popup4" class="duty_card_title link"
+                >Профілактика пролежнів</a
+              >
             </div>
             <div class="duty_card">
               <a href="#duty_popup5" class="duty_img5">
@@ -264,7 +285,9 @@
                   alt="vpravi"
                   class="duty_main_img5"
               /></a>
-              <a href="#duty_popup5"  class="duty_card_title link">Виконання вправ</a>
+              <a href="#duty_popup5" class="duty_card_title link"
+                >Виконання вправ</a
+              >
             </div>
             <div class="duty_card">
               <a href="#duty_popup6" class="duty_img6"
@@ -273,7 +296,9 @@
                   alt="besida"
                   class="duty_main_img6"
               /></a>
-              <a href="#duty_popup6" class="duty_card_title link">Підтримування бесіди</a>
+              <a href="#duty_popup6" class="duty_card_title link"
+                >Підтримування бесіди</a
+              >
             </div>
             <div class="duty_card">
               <a href="#duty_popup7" class="duty_img7">
@@ -282,7 +307,9 @@
                   alt="pribirannya"
                   class="duty_main_img7"
               /></a>
-              <a href="#duty_popup7" class="duty_card_title link">Прибирання дому</a>
+              <a href="#duty_popup7" class="duty_card_title link"
+                >Прибирання дому</a
+              >
             </div>
             <div class="duty_card">
               <a href="#duty_popup8" class="duty_img8"
@@ -291,7 +318,9 @@
                   class="duty_main_img8"
                   alt="doruchennya"
               /></a>
-              <a href="#duty_popup8" class="duty_card_title link">Виконання доручень</a>
+              <a href="#duty_popup8" class="duty_card_title link"
+                >Виконання доручень</a
+              >
             </div>
             <div class="duty_card">
               <a href="#duty_popup9" class="duty_img9"
@@ -300,7 +329,9 @@
                   alt="progulyanki"
                   class="duty_main_img9"
               /></a>
-              <a href="#duty_popup9" class="duty_card_title link">Прогулянка на вулиці</a>
+              <a href="#duty_popup9" class="duty_card_title link"
+                >Прогулянка на вулиці</a
+              >
             </div>
             <div class="duty_card1">
               <a href="#duty_popup10" class="duty_img10"
@@ -309,7 +340,9 @@
                   alt="shyodennik"
                   class="duty_main_img10"
               /></a>
-              <a href="#duty_popup10" class="duty_card_title1 link">Ведення щоденника догляду</a>
+              <a href="#duty_popup10" class="duty_card_title1 link"
+                >Ведення щоденника догляду</a
+              >
             </div>
           </div>
         </div>
@@ -366,16 +399,60 @@
                 <h3 class="accordion_title">
                   Що впливає на вартість послуг доглядальниці?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -396,16 +473,60 @@
                 <h3 class="accordion_title">
                   Які можливі графіки роботи доглядальниці?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -423,16 +544,60 @@
                 <h3 class="accordion_title">
                   Ваші доглядальниці, хто вони, який мають досвід?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -452,16 +617,60 @@
                 <h3 class="accordion_title">
                   Яка кваліфікація ваших доглядальниць?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -475,16 +684,60 @@
                 <h3 class="accordion_title">
                   Як довго триває підбор доглядальниці на замовлення?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -502,16 +755,60 @@
                   Чи здійснюєте контроль якості послуг під час роботи
                   доглядальниць?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -524,16 +821,60 @@
                 <h3 class="accordion_title">
                   Чи можливо замінити доглядальницю, якщо вона не підходить?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -548,16 +889,60 @@
                   Як краще оплатити роботу доглядальниці: заздалегідь чи
                   пізніше?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -573,16 +958,60 @@
                 <h3 class="accordion_title">
                   Як можна замовити послугу доглядальниці?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -604,16 +1033,60 @@
                   Який порядок оплати послуги з добору доглядальниці: кому, куди
                   і скільки?
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -633,16 +1106,60 @@
                 <h3 class="accordion_title">
                   Обов'язки доглядальниці, на що можна розраховувати
                 </h3>
-                <img
-                  src="./img/відкрити.svg"
+                <svg
                   class="question_block_img"
-                  alt="open"
-                />
-                <img
-                  src="./img/закрити.svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9658 22C17.4729 22 21.9373 17.5228 21.9373 12C21.9373 6.47715 17.4729 2 11.9658 2C6.4587 2 1.9943 6.47715 1.9943 12C1.9943 17.5228 6.4587 22 11.9658 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9648 8V16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97656 12H15.9538"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
                   class="question_block_img2"
-                  alt="close"
-                />
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 12H16"
+                    stroke="#2D875C"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="accordion_content">
                 <p class="accordion_text">
@@ -723,7 +1240,7 @@
             </div>
 
             <div class="footer_button_area">
-              <a  href="#final_form_popup" class="footer_btn link">Надіслати</a>
+              <a href="#final_form_popup" class="footer_btn link">Надіслати</a>
               <p class="footer_form_content_sub">
                 *натискаючи кнопку- “Надіслати”, ви надаєте свою згоду на
                 обробку персональних данних
@@ -735,25 +1252,37 @@
           <!-- *FOOTER_RIGHT_SIDE  -->
 
           <div class="footer_contact_content">
-
             <!-- !MOBILE_ADAPTIVE_BAR -->
 
             <div class="footer_socials_tablet_side">
               <div class="footer_socials_block">
-                <a target="_blank" href="t.me/dohlyad24_bot" class="header_social_img"
+                <a
+                  target="_blank"
+                  href="https://t.me/dohlyad24_bot"
+                  class="header_social_img"
                   ><img src="./img/telegram_logo_icon.png" alt="telegram"
                 /></a>
-                <a  href="viber://pa?chatURI=doglyad24" class="header_social_img">
+                <a
+                  href="viber://pa?chatURI=doglyad24"
+                  class="header_social_img"
+                >
                   <img src="./img/viber_logo_icon.png" alt="viber"
                 /></a>
 
-                <a target="_blank" href="https://wa.me/380630212407" class="header_social_img"
+                <a
+                  target="_blank"
+                  href="https://wa.me/380630212407"
+                  class="header_social_img"
                   ><img src="./img/whatsapp_logo_icon.png" alt="whatsup"
                 /></a>
               </div>
               <div class="footer_adres_block1">
                 <p class="footer_contact">Адреса:</p>
-                <a target="_blank" href="https://goo.gl/maps/NiVTEzr5UYVru948A" class="footer_main_adres link" href="#"
+                <a
+                  target="_blank"
+                  href="https://goo.gl/maps/NiVTEzr5UYVru948A"
+                  class="footer_main_adres link"
+                  href="#"
                   >04052 Україна, м. Київ, вул. Воздвиженська 50</a
                 >
               </div>
@@ -769,26 +1298,38 @@
                 >doglyad24@gmail.com</a
               >
               <div class="footer_mobile_socials_side">
-                <a target="_blank" class="footer_mobile_social_icon" href="t.me/dohlyad24_bot"
+                <a
+                  target="_blank"
+                  class="footer_mobile_social_icon"
+                  href="https://t.me/dohlyad24_bot"
                   ><img
                     src="./img/mobile_tg.png"
                     alt="telegram"
                     class="mobile_social_img"
                 /></a>
-                <a class="footer_mobile_social_icon" href="viber://pa?chatURI=doglyad24"
+                <a
+                  class="footer_mobile_social_icon"
+                  href="viber://pa?chatURI=doglyad24"
                   ><img
                     src="./img/mobile_viber.png"
                     alt="viber"
                     class="mobile_social_img"
                 /></a>
-                <a target="_blank" class="footer_mobile_social_icon" href="https://wa.me/380630212407"
+                <a
+                  target="_blank"
+                  class="footer_mobile_social_icon"
+                  href="https://wa.me/380630212407"
                   ><img
                     src="./img/mobile_wu.png"
                     alt="whatsup"
                     class="mobile_social_img"
                 /></a>
               </div>
-              <a target="_blank" href="https://goo.gl/maps/NiVTEzr5UYVru948A" class="footer_main_adres link" href="#"
+              <a
+                target="_blank"
+                href="https://goo.gl/maps/NiVTEzr5UYVru948A"
+                class="footer_main_adres link"
+                href="#"
                 >04052 Україна, м. Київ, вул. Воздвиженська 50</a
               >
             </div>
@@ -813,7 +1354,11 @@
             </div>
             <div class="footer_adres_block">
               <p class="footer_contact">Адреса:</p>
-              <a target="_blank" href="https://goo.gl/maps/NiVTEzr5UYVru948A" class="footer_main_adres link" href="#"
+              <a
+                target="_blank"
+                href="https://goo.gl/maps/NiVTEzr5UYVru948A"
+                class="footer_main_adres link"
+                href="#"
                 >04052 Україна, м. Київ, вул. Воздвиженська 50</a
               >
             </div>
@@ -823,110 +1368,148 @@
     </footer>
 
     <!-- *BTN_CITY_SECTION -->
-
+    <!-- 
     <nav class="footer_btn_block">
       <div class="container">
-      <div class="footer_section_area">
-        <div class="footer_button_section_area">
-          <a class="footer_section_btn link" href="page2.html" >Дніпро</a>
-          <a class="footer_section_btn link" href="page3.html">Харків</a>
-          <a class="footer_section_btn link" href="page4.html">Одеса</a>
-          <a class="footer_section_btn link" href="page5.html">Львів</a>
+        <div class="footer_section_area">
+          <div class="footer_button_section_area">
+            <a class="footer_section_btn link" href="page2.html">Дніпро</a>
+            <a class="footer_section_btn link" href="page3.html">Харків</a>
+            <a class="footer_section_btn link" href="page4.html">Одеса</a>
+            <a class="footer_section_btn link" href="page5.html">Львів</a>
+          </div>
         </div>
-      </div>       
       </div>
-    </nav>
+    </nav> -->
 
-<!-- ?BTN_CITY_SECTION -->
+    <!-- ?BTN_CITY_SECTION -->
 
     <!-- *FORM_POPUP -->
 
-    <!-- <div id="order_form_popup" class="form_popup">
+    <div id="order_form_popup" class="form_popup">
       <a href="#duties_block" class="popup_area"></a>
-      <div class="popup_body">
-        <div class="form_content">
-          <div class="form_left_content">
-            <h3 class="form_title">
-              Дбайливий та професійний догляд за Вашими близькими!
-            </h3>
-            <img
-              class="form_img"
-              src="./img/form_illustration.png"
-              alt="illustration"
-            />
-          </div>
-          <line class="form_line"></line>
-          <div class="form_right_content">
-            <h3 class="form_logo">Догляд 24/7</h3>
+      <div class="popup_body-bitricks-wrapper">
+        <div class="popup_body-bitricks">
+          <div class="form_content">
+            <div class="form_left_content">
+              <h3 class="form_title">
+                Дбайливий та професійний догляд за Вашими близькими!
+              </h3>
+              <img
+                class="form_img"
+                src="./img/form_illustration.png"
+                alt="illustration"
+              />
+            </div>
+            <line class="form_line"></line>
+            <div class="form_right_content">
+              <!-- <h3 class="form_logo">Догляд 24/7</h3>
             <p class="form_subtitle">
               Підберемо доглядальницю за 15 хвилин з урахуванням ваших потреб
             </p>
             <p class="form_subtitle">
               Дзвоніть
-              <a href="tel:+38063 021 24 07" class="form_span link"> +38063 021 24 07 </a>
-              або лишіть заявку на дзвінок
-            </p>
-            <form class="form_area">
-              <input type="text" placeholder="Ваше ім'я" class="form_input" />
-              <input type="text" placeholder="Ваш телефон" class="form_input" />
-            </form>
-            <a class="form_btn link" href="#final_form_popup">Надіслати</a>
-            <p class="form_commit">
+              <a href="tel:+38063 021 24 07" class="form_span link">
+                +38063 021 24 07
+              </a>
+              або лишіть заявку на дзвінок -->
+              <!-- </p> -->
+              <div class="bitricks-wrapper">
+                <script
+                  data-b24-form="inline/118/hjsouk"
+                  data-skip-moving="true"
+                >
+                  (function (w, d, u) {
+                    var s = d.createElement("script");
+                    s.async = true;
+                    s.src = u + "?" + ((Date.now() / 180000) | 0);
+                    var h = d.getElementsByTagName("script")[0];
+                    h.parentNode.insertBefore(s, h);
+                  })(
+                    window,
+                    document,
+                    "https://cdn.bitrix24.ua/b16329157/crm/form/loader_118.js"
+                  );
+                </script>
+              </div>
+
+              <!-- <a class="form_btn link" href="#final_form_popup">Надіслати</a> -->
+              <!-- <p class="form_commit">
               *натискаючи кнопку- “Надіслати”, ви надаєте свою згоду на обробку
               персональних данних
-            </p>
+            </p> -->
+            </div>
+            <a href="#duties_block" class="popup_close4">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
           </div>
-          <a href="#duties_block" class="popup_close4">
-            <img src="./img/popup_close.svg" alt="close" />
-          </a>
         </div>
       </div>
     </div>
     <!-- 2 -->
-    <!-- <div id="work_form_popup" class="form_popup">
+    <div id="work_form_popup" class="form_popup">
       <a href="#duties_block" class="popup_area"></a>
-      <div class="popup_body">
-        <div class="form_content">
-          <div class="work_form_left_content">
-            <p class="work_form_title">Хочете працювати у нас?</p>
-            <ul class="work_form_list" type="circle">
-              <li class="list_item">Гарантія стабільності</li>
-              <li class="list_item">Дружній колектив</li>
-              <li class="list_item">Гарна заробітня плата</li>
-            </ul>
-            <img
-              class="form_img"
-              src="./img/form_illustration.png"
-              alt="illustration"
-            />
-          </div>
-          <line></line>
-          <div class="form_right_content">
-            <h3 class="form_logo">Догляд 24/7</h3>
+      <div class="popup_body-bitricks-wrapper bitricks-wrapper2">
+        <div class="popup_body-bitricks">
+          <div class="form_content green-modal">
+            <div class="work_form_left_content">
+              <p class="work_form_title">Хочете працювати у нас?</p>
+              <ul class="work_form_list" type="circle">
+                <li class="list_item">Гарантія стабільності</li>
+                <li class="list_item">Дружній колектив</li>
+                <li class="list_item">Гарна заробітня плата</li>
+              </ul>
+              <img
+                class="form_img"
+                src="./img/form_illustration.png"
+                alt="illustration"
+              />
+            </div>
+            <line></line>
+            <div class="form_right_content">
+              <!-- <h3 class="form_logo">Догляд 24/7</h3>
             <p class="form_subtitle">
               Підберемо доглядальницю за 15 хвилин з урахуванням ваших потреб
             </p>
             <p class="form_subtitle">
               Дзвоніть
-              <a class="form_span link" href="tel:+38063 021 24 07"> +38063 021 24 07 </a>
+              <a class="form_span link" href="tel:+38063 021 24 07">
+                +38063 021 24 07
+              </a>
               або лишіть заявку на дзвінок
-            </p>
-            <form class="form_area">
-              <input type="text" placeholder="Ваше ім'я" class="form_input" />
-              <input type="text" placeholder="Ваш телефон" class="form_input" />
-            </form>
-            <a class="work_form_btn link" href="#final_form_popup">Надіслати</a>
-            <p class="form_commit">
+            </p> -->
+              <div class="bitricks-wrapper">
+                <script
+                  data-b24-form="inline/104/fn7gd7"
+                  data-skip-moving="true"
+                >
+                  (function (w, d, u) {
+                    var s = d.createElement("script");
+                    s.async = true;
+                    s.src = u + "?" + ((Date.now() / 180000) | 0);
+                    var h = d.getElementsByTagName("script")[0];
+                    h.parentNode.insertBefore(s, h);
+                  })(
+                    window,
+                    document,
+                    "https://cdn.bitrix24.ua/b16329157/crm/form/loader_104.js"
+                  );
+                </script>
+              </div>
+
+              <!-- <a class="work_form_btn link" href="#final_form_popup">Надіслати</a> -->
+              <!-- <p class="form_commit">
               *натискаючи кнопку- “Надіслати”, ви надаєте свою згоду на обробку
               персональних данних
-            </p>
+            </p> -->
+            </div>
+            <a href="#duties_block" class="popup_close4 close-bitricks">
+              <img src="./img/popup_close.svg" alt="close" />
+            </a>
           </div>
-          <a href="#duties_block" class="popup_close4">
-            <img src="./img/popup_close.svg" alt="close" />
-          </a>
         </div>
       </div>
-    </div> --> -->
+    </div>
 
     <!-- *FINAL_FORM_POPUP_MENU -->
 
@@ -953,39 +1536,41 @@
 
     <div id="info_price_popup" class="info_price_popup">
       <a href="#duties_block" class="popup_area"></a>
-      <div class="popup_body">
-        <div class="info_price_content">
-          <div class="popup_top_content">
-            <h3 class="info_price_title">Доглядальниця погодинно</h3>
-            <a href="#duties_block" class="popup_close8">
-              <img src="./img/popup_close.svg" alt="close" />
+      <div class="popup_body-bitricks-wrapper">
+        <div class="popup_body">
+          <div class="info_price_content">
+            <div class="popup_top_content">
+              <h3 class="info_price_title">Доглядальниця погодинно</h3>
+              <a href="#duties_block" class="popup_close8 popup_closebibi">
+                <img src="./img/popup_close.svg" alt="close" />
+              </a>
+            </div>
+            <ol class="info_price_popup_text">
+              <li>
+                Коли родичі живуть із пацієнтом і постійна присутність
+                доглядальниці може порушити їхній комфорт.
+              </li>
+              <li>
+                Коли захворювання виникло раптово і необхідна швидка
+                кваліфікована допомога та догляд.
+              </li>
+              <li>
+                Якщо пацієнт наполегливо проти наявності доглядальниці,
+                рекомендується розпочати з коротких та рідкісних візитів,
+                поступово збільшуючи їх частоту та тривалість.
+              </li>
+            </ol>
+            <a class="price_popup_btn link" href="#order_form_popup">
+              Лишити заявку
             </a>
           </div>
-          <ol class="info_price_popup_text">
-            <li>
-              Коли родичі живуть із пацієнтом і постійна присутність
-              доглядальниці може порушити їхній комфорт.
-            </li>
-            <li>
-              Коли захворювання виникло раптово і необхідна швидка кваліфікована
-              допомога та догляд.
-            </li>
-            <li>
-              Якщо пацієнт наполегливо проти наявності доглядальниці,
-              рекомендується розпочати з коротких та рідкісних візитів,
-              поступово збільшуючи їх частоту та тривалість.
-            </li>
-          </ol>
-          <a class="price_popup_btn link" href="#order_form_popup">
-            Лишити заявку
-          </a>
         </div>
       </div>
     </div>
     <div id="info_price_popup2" class="info_price_popup">
       <a href="#duties_block" class="popup_area"></a>
       <div class="popup_body">
-        <div class="info_price_content2">
+        <div class="info_price_content2 lulu">
           <div class="popup_top_content">
             <h3 class="info_price_title2">
               Доглядальниця з проживанням може знадобитися у таких випадках:
@@ -1020,7 +1605,7 @@
     <div id="info_price_popup3" class="info_price_popup">
       <a href="#duties_block" class="popup_area"></a>
       <div class="popup_body">
-        <div class="info_price_content2">
+        <div class="info_price_content2 bibi">
           <div class="popup_top_content">
             <h3 class="info_price_title2">
               Доглядальниця в лікарні може бути необхідна у таких випадках:
@@ -1058,7 +1643,7 @@
     <div id="about_service" class="about_serivce_popup">
       <a href="#duties_block" class="popup_area"></a>
       <div class="popup_body">
-        <div class="about_service_content">
+        <div class="about_service_content bobo">
           <div class="about_service_top_content">
             <h3 class="about_service_title">Доглядальниця погодинно</h3>
           </div>
@@ -1174,7 +1759,7 @@
     <div id="about_service3" class="about_serivce_popup">
       <a href="#duties_block" class="popup_area"></a>
       <div class="popup_body">
-        <div class="about_service_content">
+        <div class="about_service_content dodo">
           <div class="about_service_top_content">
             <h3 class="about_service_title">Доглядальниця в лікарню</h3>
           </div>
@@ -1238,7 +1823,7 @@
               людину з деменцією прийняти душ. Якщо це необхідно, вона також
               допоможе у постановці клізми і випорожненні кишечника
             </p>
-            <a href="#duties_block" class="popup_close">
+            <a href="#duties_block" class="popup_close2">
               <img src="./img/popup_close.svg" alt="close" />
             </a>
           </div>
@@ -1259,7 +1844,7 @@
               приготувати корисні та смачні страви, а також дотримуватися
               рекомендацій лікаря щодо харчування
             </p>
-            <a href="#duties_block" class="popup_close">
+            <a href="#duties_block" class="popup_close2">
               <img src="./img/popup_close.svg" alt="close" />
             </a>
           </div>
@@ -1282,7 +1867,7 @@
               харчування і забезпечує контроль якості продуктів, що
               закуповуються
             </p>
-            <a href="#duties_block" class="popup_close">
+            <a href="#duties_block" class="popup_close2">
               <img src="./img/popup_close.svg" alt="close" />
             </a>
           </div>
@@ -1304,7 +1889,7 @@
               допоможе зберегти життя підопічному та прискорити процес
               реабілітації
             </p>
-            <a href="#duties_block" class="popup_close">
+            <a href="#duties_block" class="popup_close2">
               <img src="./img/popup_close.svg" alt="close" />
             </a>
           </div>
@@ -1326,7 +1911,7 @@
               вправи підвищують загальний тонус хворого і є необхідною умовою
               якісної реабілітації
             </p>
-            <a href="#duties_block" class="popup_close">
+            <a href="#duties_block" class="popup_close2">
               <img src="./img/popup_close.svg" alt="close" />
             </a>
           </div>
@@ -1370,7 +1955,7 @@
               підлоги, горизонтальних поверхонь, миття посуду, прибирання
               санітарних вузлів та догляд за побутовою технікою
             </p>
-            <a href="#duties_block" class="popup_close">
+            <a href="#duties_block" class="popup_close2">
               <img src="./img/popup_close.svg" alt="close" />
             </a>
           </div>
@@ -1392,7 +1977,7 @@
               свійських тварин, підтримання зв'язку з родичами та надання звітів
               про стан підопічного
             </p>
-            <a href="#duties_block" class="popup_close">
+            <a href="#duties_block" class="popup_close2">
               <img src="./img/popup_close.svg" alt="close" />
             </a>
           </div>
@@ -1437,7 +2022,7 @@
               процес. При необхідності доглядальниця виконуватиме фіксацію
               приоритетів визначених замовником
             </p>
-            <a href="#duties_block" class="popup_close">
+            <a href="#duties_block" class="popup_close2">
               <img src="./img/popup_close.svg" alt="close" />
             </a>
           </div>
@@ -1463,9 +2048,6 @@
     </script>
 
     <!-- ?ACORIDON_SCRIPT -->
-
-    <!-- !BURGER_SCRIPT -->
-
     <script>
       var menuList = document.getElementById("menuList");
 
@@ -1479,9 +2061,8 @@
         }
       }
     </script>
+    <!-- !BURGER_SCRIPT -->
 
-<script data-b24-form="inline/118/hjsouk" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn.bitrix24.ua/b16329157/crm/form/loader_118.js');</script>
-<script data-b24-form="inline/104/fn7gd7" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn.bitrix24.ua/b16329157/crm/form/loader_104.js');</script>
     <!-- ?BURGER_SCRIPT -->
   </body>
 </html>

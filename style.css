@@ -143,6 +143,7 @@ html {
 
 .form_popup {
   -ms-overflow-style: none;
+  overflow-x: hidden;
 }
 .info_price_popup::-webkit-scrollbar {
   width: 0;
@@ -151,7 +152,6 @@ html {
 .info_price_popup {
   -ms-overflow-style: none;
 }
-
 
 blockquote,
 q {
@@ -181,6 +181,35 @@ body {
 
 /* *HEADER */
 
+.header-wrapper-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* ! */
+.bitricks-wrapper {
+  margin-top: 50px;
+}
+.close-bitricks {
+  margin-top: -50px;
+}
+.popup_body-bitricks {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px 43px 60px;
+}
+.popup_body-bitricks-wrapper {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 60px 43px 60px;
+}
+
 .header {
   display: flex;
   background: #2c8359;
@@ -200,7 +229,19 @@ body {
 .header_info_content {
   display: flex;
   align-items: center;
-  margin-right: 80px;
+  margin-right: 60px;
+}
+.dodo {
+  margin-top: 70px;
+}
+.bobo {
+  margin-top: 90px;
+}
+.bibi {
+  margin-top: 80px;
+}
+.lulu {
+  margin-top: 80px;
 }
 .header_time_sub {
   font-family: "Gilroy-Light", sans-serif;
@@ -276,7 +317,7 @@ body {
   margin-right: 0;
 }
 .mobile_social_sub {
-  font-family:"Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -314,13 +355,14 @@ body {
   margin-right: 23px;
   display: flex;
   box-sizing: border-box;
+  margin-top: 80px;
   width: 100%;
   justify-content: center;
 }
 .btn_block {
   background: #eff2e0;
   width: 100%;
-  height: 90px;
+  height: 170px;
   box-sizing: border-box;
   padding: 20px 0 20px 0;
   display: flex;
@@ -405,7 +447,7 @@ body {
 }
 .home_btn1,
 .home_btn2 {
-  font-family:"Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -432,8 +474,8 @@ body {
   margin-right: 33px;
 }
 .home_btn1:hover {
-  background: #EB2121;
- transition: 0.3s;
+  background: #eb2121;
+  transition: 0.3s;
 }
 .home_btn2 {
   padding: 18px 10px;
@@ -449,8 +491,8 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-.home_btn2:hover  {
-  background: #10B867;
+.home_btn2:hover {
+  background: #10b867;
   transition: 0.3s;
 }
 .home_illustration {
@@ -465,7 +507,7 @@ body {
   height: 610px;
   background: url(./img/background_illustration.png);
   background-color: #eff2e0;
-  background-position: center;
+  background-position:center;
   background-attachment: fixed;
   background-size: 983px;
   background-repeat: no-repeat;
@@ -514,6 +556,7 @@ body {
   max-width: 255px;
   margin-bottom: 23px;
 }
+
 .price_card_btn1 {
   background: #eff2e0;
   width: 100%;
@@ -532,8 +575,9 @@ body {
 }
 .price_card_btn1:hover {
   background: #ffffff;
-  color: #10B867;
+  color: #10b867;
   transition: 0.3s;
+  text-decoration: underline;
 }
 
 .price_card_btn2 {
@@ -573,7 +617,7 @@ body {
   margin-bottom: 5px;
 }
 .price_card_subtitle {
-  font-family:"Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
@@ -602,7 +646,7 @@ body {
   justify-content: center;
 }
 .price_card_btn3:hover {
-  background: #10B867;
+  background: #10b867;
   transition: 0.3s;
 }
 
@@ -788,7 +832,6 @@ body {
   color: #404040;
   max-width: 344px;
   margin-bottom: 23px;
- 
 }
 .application_block_span {
   font-family: "Gilroy-Medium", sans-serif;
@@ -950,7 +993,7 @@ body {
 }
 
 .accordion_list_item {
-  font-family:"Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1079,8 +1122,8 @@ body {
   margin-right: 27px;
 }
 .footer_btn:hover {
-  background: #EB2121;
- transition: 0.3s;
+  background: #eb2121;
+  transition: 0.3s;
 }
 .footer_form_content_sub {
   font-family: "Gilroy-Light", sans-serif;
@@ -1157,8 +1200,8 @@ body {
 }
 .footer_button_section_area {
   display: grid;
-  grid-template-columns:repeat(2,1fr);
-  column-gap: 50px; 
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
   row-gap: 30px;
 }
 .footer_section_btn {
@@ -1186,6 +1229,7 @@ body {
 .form_popup {
   position: fixed;
   overflow: scroll;
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.432);
@@ -1213,6 +1257,7 @@ body {
   opacity: 0;
   transform: translate(0px, -60%);
 }
+
 .form_popup:target {
   opacity: 1;
   visibility: visible;
@@ -1306,7 +1351,7 @@ body {
   margin-bottom: 31px;
 }
 .form_btn {
-  font-family:"Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1319,8 +1364,8 @@ body {
   cursor: pointer;
 }
 .form_btn:hover {
-  background: #EB2121;
- transition: 0.3s;
+  background: #eb2121;
+  transition: 0.3s;
 }
 .form_commit {
   font-family: "Gilroy-Light", sans-serif;
@@ -1332,7 +1377,7 @@ body {
   margin-top: 26px;
 }
 .work_form_btn {
-  font-family:"Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1345,7 +1390,7 @@ body {
   cursor: pointer;
 }
 .work_form_btn:hover {
-  background: #10B867;
+  background: #10b867;
   transition: 0.3s;
 }
 .popup_close4 {
@@ -1412,14 +1457,14 @@ body {
   margin-right: 17px;
 }
 .final_form_title {
- font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
   line-height: 154.2%;
   max-width: 285px;
   text-align: center;
-  color: #404040; 
+  color: #404040;
 }
 .popup_close7 {
   position: relative;
@@ -1431,7 +1476,7 @@ body {
 
 .info_price_popup {
   position: fixed;
-  overflow:scroll;
+  overflow: scroll;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.432);
@@ -1490,7 +1535,7 @@ body {
   width: 100%;
 }
 .info_price_title {
-  font-family:"Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -1502,7 +1547,7 @@ body {
   margin-right: 100px;
 }
 .info_price_title2 {
-  font-family:"Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -1514,7 +1559,7 @@ body {
   margin-right: 50px;
 }
 .info_price_popup_text {
-  font-family:"Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1526,7 +1571,7 @@ body {
   max-width: 450px;
 }
 .info_price_popup_text2 {
-  font-family:"Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1541,7 +1586,7 @@ body {
   padding: 13px 0;
   background: #a60b0b;
   border-radius: 34px;
-  font-family:"Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1566,12 +1611,15 @@ body {
 }
 .popup_close8 {
   position: relative;
-   left: 50px;
+  left: 50px;
+}
+.popup_closebibi {
+  margin-right: 50px;
 }
 .about_serivce_popup {
   position: fixed;
   width: 100%;
-  overflow:scroll;
+  overflow: scroll;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.432);
   top: 0;
@@ -1580,8 +1628,6 @@ body {
   visibility: hidden;
   transition: all 0.5s ease 0s;
 }
-
-
 
 /* ! */
 
@@ -1722,7 +1768,7 @@ body {
   padding: 13px 0;
   background: #a60b0b;
   border-radius: 34px;
-  font-family:"Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1737,9 +1783,9 @@ body {
   max-width: 208px;
   width: 100%;
 }
-.about_serivce_popup_btn:hover  {
-  background: #EB2121;
-  transition: 0.3s; 
+.about_serivce_popup_btn:hover {
+  background: #eb2121;
+  transition: 0.3s;
 }
 
 .popup_close5 {
@@ -1828,8 +1874,8 @@ body {
   cursor: pointer;
 }
 .card_popup_btn:hover {
-  background: #EB2121;
- transition: 0.3s;
+  background: #eb2121;
+  transition: 0.3s;
 }
 .popup_top_content {
   display: flex;
@@ -1837,12 +1883,26 @@ body {
 }
 
 /* !MOBILE_ADAPTIVE */
-
+@media screen and (max-width: 1300px) {
+  .popup_body-bitricks-wrapper {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 60px 43px 60px;
+  }
+}
 @media screen and (max-width: 1250px) {
   .home {
     padding: 0 30px;
   }
-  
+  .bitricks-wrapper-2 {
+    margin-top: 50px;
+  }
+  .header_contact {
+    font-size: 16px;
+    margin-right: 40px;
+  }
 }
 
 /* !ГРИД ХОУМТЕЙБЛ ТЕПЕРЬ ПО ОДНОЙ НА ФРАКЦИЮ */
@@ -1855,7 +1915,7 @@ body {
     margin-right: 26px;
   }
   .header_time_sub {
-    font-family:"Gilroy-Regular", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -1865,7 +1925,7 @@ body {
   }
   .header_contact {
     font-size: 16px;
-    margin-right: 60px;
+    margin-right: 40px;
   }
   .header_logo {
     max-width: 130px;
@@ -1893,6 +1953,14 @@ body {
   .home_btn2 {
     width: 266px;
   }
+  .popup_body-bitricks-wrapper {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px 43px 60px;
+    margin-top: 100px;
+  }
 }
 
 /* !КАРТОЧКИ ДЬЮТИСЬ ПО ДВЕ НА ФРАКЦИЮ */
@@ -1919,7 +1987,7 @@ body {
     row-gap: 20px;
   }
   .duty_card1 {
-    display: block;
+    display: flex;
     padding: 30px 60px 0 60px;
   }
   .duty_card2 {
@@ -1943,7 +2011,7 @@ body {
     margin-right: 26px;
   }
   .header_time_sub {
-    font-family:"Gilroy-Regular", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -1953,7 +2021,7 @@ body {
   }
   .header_contact {
     font-size: 16px;
-    margin-right: 40px;
+    margin-right: 20px;
   }
   .header_logo {
     max-width: 130px;
@@ -1969,6 +2037,24 @@ body {
   .footer_form_content {
     margin-right: 80px;
   }
+  .popular_question {
+    height: 700px;
+    background: url(./img/background2.png);
+    background-color: #eff2e0;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    padding: 60px 0 95px 0;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .popup_close4 {
+    position: relative;
+    bottom: 280px;
+    right: -20px;
+  }
 }
 
 /* !МАСШТАБИРУЮ ХЕДЕР ИЛЛЮСТРАЦИЮ И УБИРАЮ РАСПИСАНИЕ */
@@ -1983,7 +2069,7 @@ body {
     margin-right: 80px;
   }
   .header_contact {
-    margin-right: 60px;
+    margin-right: 40px;
   }
 
   .footer {
@@ -1991,6 +2077,28 @@ body {
   }
   .popup_body {
     align-items: center;
+  }
+  .work_form_left_content {
+    display: none;
+  }
+  .form_left_content {
+    display: none;
+  }
+  .popup_body-bitricks-wrapper {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px 43px 60px;
+    margin-top: 50px;
+  }
+  .popup_close4 {
+    position: relative;
+    bottom: 230px;
+    right: -20px;
+  }
+  .close-bitricks {
+    margin-top: -70px;
   }
 }
 
@@ -2010,14 +2118,20 @@ body {
   }
   .price_page_content {
     display: flex;
-    overflow: auto;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-     max-height: 410px;
+    overflow-x: hidden;
     width: 100%;
     max-width: 700px;
-    overflow-x: hidden;
+  }
+  .price_page_content::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* ie 10+ */
+  .price_page_content {
+    -ms-overflow-style: none;
   }
   .price_card {
     width: 100%;
@@ -2026,7 +2140,7 @@ body {
     margin-right: 0;
   }
   .price_page {
-    height: 650px;
+    height: 100%;
     background: url(./img/mobile_backgound_illustration1.png);
     background-color: #eff2e0;
     background-position: center;
@@ -2052,6 +2166,20 @@ body {
   .footer_form_content {
     margin-right: 50px;
   }
+  .header_contact {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  .header_info_content {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+ 
 }
 
 /* !УМЕНЬШАЮ ШИРИНУ АККОРДЕОНА (СКРОЛЛ АРЕИ)  */
@@ -2081,12 +2209,12 @@ body {
     margin-right: 20px;
   }
   .header_contact {
-    font-family:"Gilroy-Regular", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: 22px;
     color: #ffffff;
-    margin-right: 40px;
+    margin-right: 20px;
   }
   .home_illustration {
     position: relative;
@@ -2097,7 +2225,7 @@ body {
   }
   .popular_question {
     height: 800px;
-    background: url(./img/Group\ 146.png);
+    background: url(./img/background_img2.png);
     background-color: #eff2e0;
     background-position: center;
     background-size: 768px;
@@ -2114,7 +2242,7 @@ body {
     flex-direction: column;
   }
   .footer_form_content_sub {
-    font-family:"Gilroy-Regular", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
@@ -2127,7 +2255,7 @@ body {
     border-radius: 34px;
     padding: 14px 60px;
     border: none;
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
@@ -2151,7 +2279,7 @@ body {
     flex-direction: column;
   }
   .footer_form_content_title {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -2194,7 +2322,7 @@ body {
     font-size: 25px;
   }
   .accordion_title {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -2209,7 +2337,10 @@ body {
   }
   .popup_close8 {
     position: relative;
-     left: 10px;
+    left: 10px;
+  }
+  .popup_closebibi {
+    margin-right: 10px;
   }
 }
 
@@ -2282,6 +2413,21 @@ body {
     margin-left: 25px;
     margin-right: 30px;
   }
+  /* ! */
+  .popup_body-bitricks {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px 43px 60px;
+  }
+  .popup_body-bitricks-wrapper {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 3px 0px;
+  }
 }
 
 /* !УБИРАЮ ИЛЛЮСТРАЦИЮ С ХЭДЕРА, ДОБАВЛЯЮ БУРГЕР И ПЕРЕНОШУ СОЦИАЛКИ ВНИЗ ОТНОСИТЕЛЬНО ДИЗАЙНА*/
@@ -2313,7 +2459,7 @@ body {
   .header_contact {
     margin-right: 0;
     width: 100%;
-    font-size: 17px;
+    font-size: 14px;
   }
   .header_info_content {
     margin-right: 20vw;
@@ -2324,6 +2470,14 @@ body {
   }
   .home_illustration {
     display: none;
+  }
+  .popup_close4 {
+    position: relative;
+    bottom: 205px;
+    right: 0px;
+  }
+  .close-bitricks {
+    margin-top: -120px;
   }
   .main_home_content {
     display: flex;
@@ -2354,8 +2508,8 @@ body {
   }
   .btn_block .btn_area {
     background: #fffced;
-    position: absolute;
-    top: 8 0px;
+    position: fixed;
+    top: -7px;
     right: 0;
     z-index: 2;
     display: flex;
@@ -2367,12 +2521,12 @@ body {
     margin-right: 0;
   }
   .section_btn {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
     line-height: 20px;
-    padding: 11px 29px;
+    padding: 11px 0px;
     max-width: 191px;
     width: 100%;
     box-sizing: border-box;
@@ -2412,6 +2566,7 @@ body {
   .mobile_socials_section {
     display: flex;
     padding: 23px 50px;
+    margin-top: 73px;
     justify-content: space-between;
     background: #ffffff;
     align-items: center;
@@ -2514,7 +2669,7 @@ body {
     transform: translate(0px, -60%);
   }
   .final_form_title {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 21px;
@@ -2599,6 +2754,11 @@ body {
   .popup_text {
     margin-right: 0px;
   }
+  .popup_close2 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 /* !ДЬЮТИ БЛОК ПО ОДНОМУ ОБЬЕКЬУ НА ФРАКЦИЮ + МАСШТАБИРУЮ  */
@@ -2646,7 +2806,7 @@ body {
     text-align: center;
   }
   .footer_main_adres {
-    font-family:"Gilroy-Regular", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 21px;
@@ -2670,6 +2830,11 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 52px;
+  }
+  .popup_close4 {
+    position: relative;
+    bottom: 235px;
+    right: 0px;
   }
   .home_btn1 {
     padding: 17px 10px;
@@ -2745,9 +2910,12 @@ body {
   .question_block_img {
     margin-left: 30px;
   }
-.popup_close {
-  left: 15px;
-}
+  .popup_close {
+    left: 15px;
+  }
+  .close-bitricks {
+    margin-top: -90px;
+  }
 }
 
 /* !МАСШТАБИРУЮ АККОРДЕОН (ОПЯТЬ?) */
@@ -2757,7 +2925,7 @@ body {
 @media screen and (max-width: 600px) {
   .duty_page_title {
     margin-left: 20px;
-   }
+  }
   .about_service_title {
     max-width: 200px;
     text-align: center;
@@ -2792,7 +2960,7 @@ body {
     overflow: auto;
     overflow-x: hidden;
   }
-  
+
   .accordion .accordion_main_content.active .accordion_label {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -2811,7 +2979,7 @@ body {
     max-width: 800px;
   }
   .accordion_title {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 19px;
@@ -2849,6 +3017,11 @@ body {
     right: 10px;
     bottom: 230px;
   }
+  .popup_close4 {
+    position: relative;
+    bottom: 255px;
+    right: 0px;
+  }
 }
 
 /* !У ТАЙТЛОВ В СЕКЦИИ МЕНЯЮ РАЗМЕР */
@@ -2878,7 +3051,7 @@ body {
     font-size: 40px;
     margin-bottom: 60px;
   }
-  
+
   .duty_page_title {
     font-size: 40px;
     margin-bottom: 90px;
@@ -2891,7 +3064,7 @@ body {
     margin-bottom: 50px;
   }
   .info_price_popup_text {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -2903,7 +3076,7 @@ body {
     max-width: 450px;
   }
   .info_price_popup_text2 {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -2915,7 +3088,7 @@ body {
     margin-top: 30px;
   }
   .info_price_title {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 27px;
@@ -2928,7 +3101,7 @@ body {
     text-align: center;
   }
   .info_price_title2 {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 27px;
@@ -2945,10 +3118,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 30px 43px 30px;
+    padding: 50px 30px 43px 30px;
   }
   .popup_close5 {
     left: 180px;
+  }
+  .popup_close4 {
+    position: relative;
+    bottom: 235px;
+    right: 0px;
+  }
+  .close-bitricks {
+    margin-top: -110px;
   }
 }
 
@@ -2959,12 +3140,21 @@ body {
 /* !МАСШТАБИРУЮ БЭКГРАУНД ИЛЛЮСТРАЦИИ У КАЖДОЙ СЕКЦИИ ОТДЕЛЬНО */
 
 @media screen and (max-width: 500px) {
+  .header {
+    padding: 14px 20px;
+  }
   .header_info_content {
     margin-right: 30px;
     margin-left: 12px;
   }
+  .dodo {
+    margin-top: 30px;
+  }
+  .bobo {
+    margin-top: 50px;
+  }
   .duty_page_title {
-   margin-left: 30px;
+    margin-left: 30px;
   }
   .footer {
     padding: 58px 30px 0 30px;
@@ -2987,7 +3177,7 @@ body {
   .footer_main_contact2 {
     font-size: 23px;
     margin-bottom: 29px;
-    color: #CFF9E4;
+    color: #cff9e4;
   }
   .footer_mobile_social_icon {
     margin-right: 32px;
@@ -3126,7 +3316,7 @@ body {
     display: flex;
     justify-content: center;
     white-space: nowrap;
-  }                         
+  }
   .popup_close5 {
     left: 150px;
   }
@@ -3155,7 +3345,7 @@ body {
   }
   .duty_page_title {
     margin-left: 20px;
-   }
+  }
   .mobile_socials_section {
     padding: 23px 20px;
   }
@@ -3258,8 +3448,12 @@ body {
     left: 150px;
   }
   .popup_close4 {
-    right: 10px;
-    bottom: 260px;
+    position: relative;
+    bottom: 210px;
+    right: 0px;
+  }
+  .close-bitricks {
+    margin-top: -110px;
   }
   .home_title {
     font-size: 36px;
@@ -3282,9 +3476,9 @@ body {
   .form_input {
     width: 270px;
   }
- .popup_close5 {
-  left: 130px;
- }
+  .popup_close5 {
+    left: 130px;
+  }
   .popup_text {
     font-size: 15px;
   }
@@ -3293,16 +3487,15 @@ body {
     display: flex;
     justify-content: center;
   }
-  
 }
 
 /* !МАСШТАБИРУЮ ХЕДЕР  */
 
 @media screen and (max-width: 420px) {
-.header_info_content {
-  margin-right: 25px;
-  margin-left: 15px;
- } 
+  .header_info_content {
+    margin-right: 25px;
+    margin-left: 15px;
+  }
 }
 
 /* !МАСШТАБИРУЮ ПРАЙС ПОПАП И ДЬЮТИ ПОПАП  */
@@ -3310,8 +3503,8 @@ body {
 @media screen and (max-width: 400px) {
   .footer_button_section_area {
     display: grid;
-    grid-template-columns:repeat(1,1fr);
-    column-gap: 50px; 
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 50px;
     row-gap: 30px;
   }
   .info_price_content {
@@ -3351,7 +3544,7 @@ body {
     left: 15px;
   }
   .info_price_popup_text2 {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -3363,7 +3556,7 @@ body {
     margin-top: 30px;
   }
   .info_price_title {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -3374,7 +3567,7 @@ body {
     max-width: 535px;
   }
   .info_price_title2 {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -3394,10 +3587,10 @@ body {
     top: 10px;
     left: 10px;
   }
- .header_info_content {
-  margin-right: 20px;
-  margin-left: 10px;
- } 
+  .header_info_content {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
 }
 
 /* !МАСШТАБИРУЮ ХЭДЕР */
@@ -3443,7 +3636,7 @@ body {
     margin-bottom: 20px;
   }
   .accordion_title {
-    font-family:"Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
@@ -3501,19 +3694,35 @@ body {
     max-width: 100px;
   }
   .popup_close4 {
-    bottom: 230px;
+    bottom: 240px;
   }
-  .popup_body {
+  /* .popup_body {
     min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px 43px 20px;
-  }
+  } */
   .form_content {
-    width: 100%;
-    max-width: 340px;
+    width: 320px;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    padding: 0;
+    height: 500px;
+  }
+  .bitricks-wrapper-two {
+    width: 800px;
+  }
+  .bitricks-wrapper {
+    margin-left: 20px;
+  }
+  .popup_body-bitricks {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
   }
   .form_right_content {
     display: flex;
@@ -3523,7 +3732,7 @@ body {
     margin-left: 0px;
   }
   .form_subtitle {
-    font-family:"Gilroy-Regular", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -3539,18 +3748,44 @@ body {
   .form_commit {
     font-size: 13px;
   }
+  .green-modal {
+    height: 800px;
+  }
+  .close-bitricks {
+    margin-top: -80px;
+    margin-right: 5px;
+  }
+  .popup_close4 {
+    position: relative;
+    bottom: 220px;
+    right: 16px;
+  }
+  .header_info_content {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
 
 /* !МАСШТАБИРУЮ НАДПИСЬ НА ХЭДЕРЕ + ПОПАП ПАДИНГ + ТЕКСТ ХОУМ ТЕЙБЛ */
 
- @media screen and (max-width:330px) {
+@media screen and (max-width: 330px) {
   .header_info_content {
-      margin-right: 15px;
-      margin-left: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
   .header_contact {
-    font-size: 16px;
+    font-size: 14px;
   }
+  .close-bitricks {
+    margin-top: -30px;
+    margin-right: 0px;
+  }
+  .popup_close4 {
+    position: relative;
+    bottom: 245px;
+    right: 16px;
+  }
+
   .popup_body {
     min-height: 100%;
     display: flex;
@@ -3566,9 +3801,26 @@ body {
   }
   .popup_close5 {
     left: 130px;
-   }
- }
-
+  }
+  .form_content {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: 560px;
+  }
+  .bitricks-wrapper {
+    margin-left: 20px;
+  }
+  .popup_body-bitricks {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+}
 
 /* !МАСШТАБИРУЮ КАРТОЧКИ + УМЕНЬШАЮ КОЛУМН ГЕП */
 
@@ -3580,24 +3832,24 @@ body {
   .header_info_content {
     margin-right: 4px;
     margin-left: 3px;
-}
-.header_contact {
-  font-size: 15px;
-}
-.mobile_socials_section {
-  display: flex;
-  padding: 23px 50px;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #ffffff;
-  align-items: center;
-}
-.mobile_socials_block {
-  margin-bottom: 10px ;
-}
-.duties_block {
-  column-gap: 10px;
-}
+  }
+  .header_contact {
+    font-size: 12px;
+  }
+  .mobile_socials_section {
+    display: flex;
+    padding: 23px 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    align-items: center;
+  }
+  .mobile_socials_block {
+    margin-bottom: 10px;
+  }
+  .duties_block {
+    column-gap: 10px;
+  }
   .duty_card,
   .duty_card1 {
     width: 100%;
@@ -3667,9 +3919,5 @@ body {
   }
   .popup_close5 {
     left: 130px;
-   }
-
+  }
 }
-
-
-
